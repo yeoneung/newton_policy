@@ -1,0 +1,12 @@
+* text=auto eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.log text eol=lf
+*.tex text eol=lf
+*.csv -text
+*.pt binary
+*.pdf binary
+*.png binary
+runs/** -text

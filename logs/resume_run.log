@@ -1,0 +1,557 @@
++ PY=<user>/anaconda3/python.exe
++ cd <workspace>/newton_exp/paper/code_final
++ export KMP_DUPLICATE_LIB_OK=TRUE
++ KMP_DUPLICATE_LIB_OK=TRUE
++ export PYTHONUNBUFFERED=1
++ PYTHONUNBUFFERED=1
+++ date
++ echo 'STAGE1a ring d10 seeds 12 13 : Tue Aug  4 15:05:29     2026'
+STAGE1a ring d10 seeds 12 13 : Tue Aug  4 15:05:29     2026
++ <user>/anaconda3/python.exe dim_sweep_newton_pinn.py --preset paper --families ring --dims 10 --seeds 12 13 --with_direct --save_models --outdir runs/sweep2_low_r10
+================================================================================
+Dimension-sweep Newton--PINN benchmark
+code version : dim_sweep_newton_pinn_v3_dense_time_part
+time         : 2026-08-04 15:05:30
+device       : cuda (NVIDIA GeForce RTX 5070)
+torch        : 2.11.0+cu128
+families     : ['ring']
+dims         : [10]
+seeds        : [12, 13]
+newton_steps : 4, epochs/step 4000
+with_direct  : True (16000 epochs)
+output       : <workspace>/newton_exp\paper\code_final\runs\sweep2_low_r10
+================================================================================
+[selfcheck] ring_10d: max|Du err|=8.88e-16, max|Lap err|=1.07e-14, max|residual|=1.07e-14
+
+=== ring_10d: train_batch=4096, eval_batch=2048, mc_eval=80000, M2=0.800 ===
+
+--- ring_10d, seed=12 ---
+[ring_10d, step=00] residual scale sigma=1.7684e+00
+[ring_10d, step=00] epoch 00001/4000, loss(norm)=1.1304e+00, time=0.1s, peak_cuda=676MB
+[ring_10d, step=00] epoch 00500/4000, loss(norm)=1.0039e-02, time=11.2s, peak_cuda=676MB
+[ring_10d, step=00] epoch 01000/4000, loss(norm)=6.8098e-03, time=22.4s, peak_cuda=676MB
+[ring_10d, step=00] epoch 01500/4000, loss(norm)=5.2659e-03, time=33.5s, peak_cuda=676MB
+[ring_10d, step=00] epoch 02000/4000, loss(norm)=2.8508e-03, time=44.7s, peak_cuda=676MB
+[ring_10d, step=00] epoch 02500/4000, loss(norm)=4.1938e-03, time=55.8s, peak_cuda=676MB
+[ring_10d, step=00] epoch 03000/4000, loss(norm)=2.3074e-03, time=66.9s, peak_cuda=676MB
+[ring_10d, step=00] epoch 03500/4000, loss(norm)=1.8874e-03, time=78.0s, peak_cuda=676MB
+[ring_10d, step=00] epoch 04000/4000, loss(norm)=1.6877e-03, time=89.1s, peak_cuda=676MB
+[ring_10d, seed=12, K=1] E=4.204e-02, R=7.276e-02, C=3.684e-01, ratio=0.114
+[ring_10d, step=01] residual scale sigma=7.2967e-02
+[ring_10d, step=01] epoch 00001/4000, loss(norm)=7.1028e+01, time=0.0s, peak_cuda=691MB
+[ring_10d, step=01] epoch 00500/4000, loss(norm)=7.2581e-01, time=13.9s, peak_cuda=692MB
+[ring_10d, step=01] epoch 01000/4000, loss(norm)=6.6614e-01, time=27.8s, peak_cuda=692MB
+[ring_10d, step=01] epoch 01500/4000, loss(norm)=6.7140e-01, time=41.6s, peak_cuda=692MB
+[ring_10d, step=01] epoch 02000/4000, loss(norm)=6.4836e-01, time=55.5s, peak_cuda=692MB
+[ring_10d, step=01] epoch 02500/4000, loss(norm)=6.1820e-01, time=69.3s, peak_cuda=692MB
+[ring_10d, step=01] epoch 03000/4000, loss(norm)=5.9917e-01, time=83.2s, peak_cuda=692MB
+[ring_10d, step=01] epoch 03500/4000, loss(norm)=5.5061e-01, time=97.1s, peak_cuda=692MB
+[ring_10d, step=01] epoch 04000/4000, loss(norm)=4.9795e-01, time=111.0s, peak_cuda=692MB
+[ring_10d, seed=12, K=2] E=2.188e-02, R=5.209e-02, C=5.215e-02, ratio=0.420
+[ring_10d, step=02] residual scale sigma=5.1545e-02
+[ring_10d, step=02] epoch 00001/4000, loss(norm)=6.4022e+01, time=0.0s, peak_cuda=919MB
+[ring_10d, step=02] epoch 00500/4000, loss(norm)=9.2955e-01, time=16.4s, peak_cuda=920MB
+[ring_10d, step=02] epoch 01000/4000, loss(norm)=9.7488e-01, time=32.8s, peak_cuda=920MB
+[ring_10d, step=02] epoch 01500/4000, loss(norm)=9.4580e-01, time=49.2s, peak_cuda=920MB
+[ring_10d, step=02] epoch 02000/4000, loss(norm)=9.1528e-01, time=65.7s, peak_cuda=920MB
+[ring_10d, step=02] epoch 02500/4000, loss(norm)=9.4327e-01, time=82.1s, peak_cuda=920MB
+[ring_10d, step=02] epoch 03000/4000, loss(norm)=8.7892e-01, time=98.6s, peak_cuda=920MB
+[ring_10d, step=02] epoch 03500/4000, loss(norm)=9.2885e-01, time=115.1s, peak_cuda=920MB
+[ring_10d, step=02] epoch 04000/4000, loss(norm)=9.1911e-01, time=131.6s, peak_cuda=920MB
+[ring_10d, seed=12, K=3] E=1.932e-02, R=4.882e-02, C=4.892e-02, ratio=0.395
+[ring_10d, step=03] residual scale sigma=4.8822e-02
+[ring_10d, step=03] epoch 00001/4000, loss(norm)=1.0768e+02, time=0.0s, peak_cuda=1363MB
+[ring_10d, step=03] epoch 00500/4000, loss(norm)=9.7664e-01, time=18.9s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 01000/4000, loss(norm)=1.0176e+00, time=37.8s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 01500/4000, loss(norm)=1.0103e+00, time=56.7s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 02000/4000, loss(norm)=9.3334e-01, time=75.6s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 02500/4000, loss(norm)=9.7868e-01, time=94.5s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 03000/4000, loss(norm)=9.0825e-01, time=113.6s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 03500/4000, loss(norm)=9.4567e-01, time=132.7s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 04000/4000, loss(norm)=9.8132e-01, time=151.7s, peak_cuda=1364MB
+[ring_10d, seed=12, K=4] E=1.750e-02, R=4.759e-02, C=4.743e-02, ratio=0.369
+[saved] runs\sweep2_low_r10\figures\quicklook_ring_10d_seed12.pdf
+[saved] runs\sweep2_low_r10\figures\slice_error_ring_10d_seed12.pdf
+[ring_10d, direct] residual scale sigma=1.8602e+00
+[ring_10d, direct] epoch 00001/16000, loss(norm)=1.0231e+00, time=0.0s, peak_cuda=684MB
+[ring_10d, direct] epoch 00500/16000, loss(norm)=8.3141e-03, time=11.6s, peak_cuda=685MB
+[ring_10d, direct] epoch 01000/16000, loss(norm)=7.9482e-03, time=23.3s, peak_cuda=685MB
+[ring_10d, direct] epoch 01500/16000, loss(norm)=3.6213e-03, time=34.9s, peak_cuda=685MB
+[ring_10d, direct] epoch 02000/16000, loss(norm)=2.5171e-03, time=46.6s, peak_cuda=685MB
+[ring_10d, direct] epoch 02500/16000, loss(norm)=2.0437e-03, time=58.2s, peak_cuda=685MB
+[ring_10d, direct] epoch 03000/16000, loss(norm)=1.6041e-03, time=69.9s, peak_cuda=685MB
+[ring_10d, direct] epoch 03500/16000, loss(norm)=1.4033e-03, time=81.6s, peak_cuda=685MB
+[ring_10d, direct] epoch 04000/16000, loss(norm)=1.5385e-03, time=93.3s, peak_cuda=685MB
+[ring_10d, direct] epoch 04500/16000, loss(norm)=1.2600e-03, time=105.1s, peak_cuda=685MB
+[ring_10d, direct] epoch 05000/16000, loss(norm)=1.1052e-03, time=116.8s, peak_cuda=685MB
+[ring_10d, direct] epoch 05500/16000, loss(norm)=1.1056e-03, time=128.4s, peak_cuda=685MB
+[ring_10d, direct] epoch 06000/16000, loss(norm)=9.1882e-04, time=140.1s, peak_cuda=685MB
+[ring_10d, direct] epoch 06500/16000, loss(norm)=1.8147e-03, time=151.7s, peak_cuda=685MB
+[ring_10d, direct] epoch 07000/16000, loss(norm)=8.5537e-04, time=163.4s, peak_cuda=685MB
+[ring_10d, direct] epoch 07500/16000, loss(norm)=1.2146e-03, time=175.0s, peak_cuda=685MB
+[ring_10d, direct] epoch 08000/16000, loss(norm)=1.0892e-03, time=186.7s, peak_cuda=685MB
+[ring_10d, direct] epoch 08500/16000, loss(norm)=7.9083e-04, time=198.4s, peak_cuda=685MB
+[ring_10d, direct] epoch 09000/16000, loss(norm)=1.7186e-03, time=210.0s, peak_cuda=685MB
+[ring_10d, direct] epoch 09500/16000, loss(norm)=1.0221e-03, time=221.7s, peak_cuda=685MB
+[ring_10d, direct] epoch 10000/16000, loss(norm)=6.9761e-04, time=233.3s, peak_cuda=685MB
+[ring_10d, direct] epoch 10500/16000, loss(norm)=9.5199e-04, time=245.0s, peak_cuda=685MB
+[ring_10d, direct] epoch 11000/16000, loss(norm)=1.4971e-03, time=256.7s, peak_cuda=685MB
+[ring_10d, direct] epoch 11500/16000, loss(norm)=8.5537e-04, time=268.3s, peak_cuda=685MB
+[ring_10d, direct] epoch 12000/16000, loss(norm)=1.0817e-03, time=279.9s, peak_cuda=685MB
+[ring_10d, direct] epoch 12500/16000, loss(norm)=6.4720e-04, time=291.6s, peak_cuda=685MB
+[ring_10d, direct] epoch 13000/16000, loss(norm)=9.0812e-04, time=303.3s, peak_cuda=685MB
+[ring_10d, direct] epoch 13500/16000, loss(norm)=1.8042e-03, time=314.9s, peak_cuda=685MB
+[ring_10d, direct] epoch 14000/16000, loss(norm)=5.9480e-04, time=326.5s, peak_cuda=685MB
+[ring_10d, direct] epoch 14500/16000, loss(norm)=1.7326e-03, time=338.1s, peak_cuda=685MB
+[ring_10d, direct] epoch 15000/16000, loss(norm)=1.0362e-03, time=349.7s, peak_cuda=685MB
+[ring_10d, direct] epoch 15500/16000, loss(norm)=7.0209e-04, time=361.2s, peak_cuda=685MB
+[ring_10d, direct] epoch 16000/16000, loss(norm)=7.0581e-04, time=372.8s, peak_cuda=685MB
+[ring_10d, seed=12, direct] E=4.684e-02, R=6.179e-02, time=373s
+
+--- ring_10d, seed=13 ---
+[ring_10d, step=00] residual scale sigma=1.7707e+00
+[ring_10d, step=00] epoch 00001/4000, loss(norm)=1.0555e+00, time=0.0s, peak_cuda=675MB
+[ring_10d, step=00] epoch 00500/4000, loss(norm)=1.0036e-02, time=11.1s, peak_cuda=676MB
+[ring_10d, step=00] epoch 01000/4000, loss(norm)=6.5943e-03, time=22.1s, peak_cuda=676MB
+[ring_10d, step=00] epoch 01500/4000, loss(norm)=4.3310e-03, time=33.2s, peak_cuda=676MB
+[ring_10d, step=00] epoch 02000/4000, loss(norm)=3.1722e-03, time=44.3s, peak_cuda=676MB
+[ring_10d, step=00] epoch 02500/4000, loss(norm)=4.5847e-03, time=55.4s, peak_cuda=676MB
+[ring_10d, step=00] epoch 03000/4000, loss(norm)=2.3425e-03, time=66.5s, peak_cuda=676MB
+[ring_10d, step=00] epoch 03500/4000, loss(norm)=3.6662e-03, time=77.6s, peak_cuda=676MB
+[ring_10d, step=00] epoch 04000/4000, loss(norm)=1.8786e-03, time=88.7s, peak_cuda=676MB
+[ring_10d, seed=13, K=1] E=3.256e-02, R=7.005e-02, C=3.663e-01, ratio=0.089
+[ring_10d, step=01] residual scale sigma=7.0113e-02
+[ring_10d, step=01] epoch 00001/4000, loss(norm)=3.3577e+01, time=0.0s, peak_cuda=691MB
+[ring_10d, step=01] epoch 00500/4000, loss(norm)=8.1151e-01, time=13.9s, peak_cuda=692MB
+[ring_10d, step=01] epoch 01000/4000, loss(norm)=7.9799e-01, time=27.8s, peak_cuda=692MB
+[ring_10d, step=01] epoch 01500/4000, loss(norm)=7.7932e-01, time=41.7s, peak_cuda=692MB
+[ring_10d, step=01] epoch 02000/4000, loss(norm)=7.4263e-01, time=55.5s, peak_cuda=692MB
+[ring_10d, step=01] epoch 02500/4000, loss(norm)=6.7309e-01, time=69.5s, peak_cuda=692MB
+[ring_10d, step=01] epoch 03000/4000, loss(norm)=5.9889e-01, time=83.4s, peak_cuda=692MB
+[ring_10d, step=01] epoch 03500/4000, loss(norm)=5.4242e-01, time=97.3s, peak_cuda=692MB
+[ring_10d, step=01] epoch 04000/4000, loss(norm)=5.3114e-01, time=111.2s, peak_cuda=692MB
+[ring_10d, seed=13, K=2] E=1.984e-02, R=5.154e-02, C=5.121e-02, ratio=0.387
+[ring_10d, step=02] residual scale sigma=5.0811e-02
+[ring_10d, step=02] epoch 00001/4000, loss(norm)=9.1860e+01, time=0.0s, peak_cuda=919MB
+[ring_10d, step=02] epoch 00500/4000, loss(norm)=1.0268e+00, time=16.4s, peak_cuda=920MB
+[ring_10d, step=02] epoch 01000/4000, loss(norm)=1.0129e+00, time=32.9s, peak_cuda=920MB
+[ring_10d, step=02] epoch 01500/4000, loss(norm)=1.0113e+00, time=49.3s, peak_cuda=920MB
+[ring_10d, step=02] epoch 02000/4000, loss(norm)=9.9918e-01, time=65.7s, peak_cuda=920MB
+[ring_10d, step=02] epoch 02500/4000, loss(norm)=9.4128e-01, time=82.2s, peak_cuda=920MB
+[ring_10d, step=02] epoch 03000/4000, loss(norm)=9.4696e-01, time=98.7s, peak_cuda=920MB
+[ring_10d, step=02] epoch 03500/4000, loss(norm)=8.9046e-01, time=115.1s, peak_cuda=920MB
+[ring_10d, step=02] epoch 04000/4000, loss(norm)=9.2191e-01, time=131.6s, peak_cuda=920MB
+[ring_10d, seed=13, K=3] E=1.832e-02, R=4.856e-02, C=4.878e-02, ratio=0.376
+[ring_10d, step=03] residual scale sigma=4.8383e-02
+[ring_10d, step=03] epoch 00001/4000, loss(norm)=8.7355e+01, time=0.0s, peak_cuda=1363MB
+[ring_10d, step=03] epoch 00500/4000, loss(norm)=9.7962e-01, time=19.1s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 01000/4000, loss(norm)=1.0045e+00, time=38.2s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 01500/4000, loss(norm)=9.8326e-01, time=57.2s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 02000/4000, loss(norm)=9.8450e-01, time=76.5s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 02500/4000, loss(norm)=9.8529e-01, time=96.0s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 03000/4000, loss(norm)=1.0075e+00, time=115.7s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 03500/4000, loss(norm)=1.0658e+00, time=135.0s, peak_cuda=1364MB
+[ring_10d, step=03] epoch 04000/4000, loss(norm)=1.0024e+00, time=154.4s, peak_cuda=1364MB
+[ring_10d, seed=13, K=4] E=1.753e-02, R=4.775e-02, C=4.761e-02, ratio=0.368
+[saved] runs\sweep2_low_r10\figures\quicklook_ring_10d_seed13.pdf
+[saved] runs\sweep2_low_r10\figures\slice_error_ring_10d_seed13.pdf
+[ring_10d, direct] residual scale sigma=1.7950e+00
+[ring_10d, direct] epoch 00001/16000, loss(norm)=9.9178e-01, time=0.0s, peak_cuda=684MB
+[ring_10d, direct] epoch 00500/16000, loss(norm)=1.0334e-02, time=12.2s, peak_cuda=685MB
+[ring_10d, direct] epoch 01000/16000, loss(norm)=5.5972e-03, time=24.3s, peak_cuda=685MB
+[ring_10d, direct] epoch 01500/16000, loss(norm)=4.7938e-03, time=36.4s, peak_cuda=685MB
+[ring_10d, direct] epoch 02000/16000, loss(norm)=2.7734e-03, time=48.6s, peak_cuda=685MB
+[ring_10d, direct] epoch 02500/16000, loss(norm)=3.6018e-03, time=60.7s, peak_cuda=685MB
+[ring_10d, direct] epoch 03000/16000, loss(norm)=2.3690e-03, time=72.8s, peak_cuda=685MB
+[ring_10d, direct] epoch 03500/16000, loss(norm)=1.8108e-03, time=84.9s, peak_cuda=685MB
+[ring_10d, direct] epoch 04000/16000, loss(norm)=1.5372e-03, time=97.0s, peak_cuda=685MB
+[ring_10d, direct] epoch 04500/16000, loss(norm)=1.2091e-02, time=109.0s, peak_cuda=685MB
+[ring_10d, direct] epoch 05000/16000, loss(norm)=1.5024e-03, time=120.9s, peak_cuda=685MB
+[ring_10d, direct] epoch 05500/16000, loss(norm)=1.1419e-03, time=132.9s, peak_cuda=685MB
+[ring_10d, direct] epoch 06000/16000, loss(norm)=1.0610e-03, time=144.8s, peak_cuda=685MB
+[ring_10d, direct] epoch 06500/16000, loss(norm)=1.1990e-03, time=156.6s, peak_cuda=685MB
+[ring_10d, direct] epoch 07000/16000, loss(norm)=1.4173e-02, time=168.2s, peak_cuda=685MB
+[ring_10d, direct] epoch 07500/16000, loss(norm)=5.3167e-03, time=179.9s, peak_cuda=685MB
+[ring_10d, direct] epoch 08000/16000, loss(norm)=1.2692e-03, time=191.6s, peak_cuda=685MB
+[ring_10d, direct] epoch 08500/16000, loss(norm)=8.9912e-04, time=203.3s, peak_cuda=685MB
+[ring_10d, direct] epoch 09000/16000, loss(norm)=9.2758e-04, time=215.1s, peak_cuda=685MB
+[ring_10d, direct] epoch 09500/16000, loss(norm)=2.6594e-03, time=226.8s, peak_cuda=685MB
+[ring_10d, direct] epoch 10000/16000, loss(norm)=1.0031e-03, time=238.5s, peak_cuda=685MB
+[ring_10d, direct] epoch 10500/16000, loss(norm)=6.8799e-04, time=250.1s, peak_cuda=685MB
+[ring_10d, direct] epoch 11000/16000, loss(norm)=1.3709e-03, time=261.8s, peak_cuda=685MB
+[ring_10d, direct] epoch 11500/16000, loss(norm)=5.8114e-04, time=273.5s, peak_cuda=685MB
+[ring_10d, direct] epoch 12000/16000, loss(norm)=9.0291e-03, time=285.1s, peak_cuda=685MB
+[ring_10d, direct] epoch 12500/16000, loss(norm)=3.0911e-03, time=296.8s, peak_cuda=685MB
+[ring_10d, direct] epoch 13000/16000, loss(norm)=5.2734e-04, time=308.4s, peak_cuda=685MB
+[ring_10d, direct] epoch 13500/16000, loss(norm)=7.5290e-04, time=320.1s, peak_cuda=685MB
+[ring_10d, direct] epoch 14000/16000, loss(norm)=1.5941e-03, time=331.8s, peak_cuda=685MB
+[ring_10d, direct] epoch 14500/16000, loss(norm)=5.0097e-04, time=343.5s, peak_cuda=685MB
+[ring_10d, direct] epoch 15000/16000, loss(norm)=9.0208e-04, time=355.2s, peak_cuda=685MB
+[ring_10d, direct] epoch 15500/16000, loss(norm)=5.9532e-04, time=366.8s, peak_cuda=685MB
+[ring_10d, direct] epoch 16000/16000, loss(norm)=9.1787e-04, time=378.5s, peak_cuda=685MB
+[ring_10d, seed=13, direct] E=4.102e-02, R=5.856e-02, time=378s
+
+Done in 29.0 min.
+Outputs: <workspace>/newton_exp\paper\code_final\runs\sweep2_low_r10
+++ date
++ echo 'STAGE1b ring d20 seeds 11 12 13 : Tue Aug  4 15:34:32     2026'
+STAGE1b ring d20 seeds 11 12 13 : Tue Aug  4 15:34:32     2026
++ <user>/anaconda3/python.exe dim_sweep_newton_pinn.py --preset paper --families ring --dims 20 --seeds 11 12 13 --with_direct --save_models --outdir runs/sweep2_low_r20
+================================================================================
+Dimension-sweep Newton--PINN benchmark
+code version : dim_sweep_newton_pinn_v3_dense_time_part
+time         : 2026-08-04 15:34:33
+device       : cuda (NVIDIA GeForce RTX 5070)
+torch        : 2.11.0+cu128
+families     : ['ring']
+dims         : [20]
+seeds        : [11, 12, 13]
+newton_steps : 4, epochs/step 4000
+with_direct  : True (16000 epochs)
+output       : <workspace>/newton_exp\paper\code_final\runs\sweep2_low_r20
+================================================================================
+[selfcheck] ring_20d: max|Du err|=8.88e-16, max|Lap err|=1.42e-14, max|residual|=1.42e-14
+
+=== ring_20d: train_batch=4096, eval_batch=2048, mc_eval=80000, M2=0.700 ===
+
+--- ring_20d, seed=11 ---
+[ring_20d, step=00] residual scale sigma=1.7647e+00
+[ring_20d, step=00] epoch 00001/4000, loss(norm)=1.1347e+00, time=0.1s, peak_cuda=1313MB
+[ring_20d, step=00] epoch 00500/4000, loss(norm)=3.0544e-02, time=20.7s, peak_cuda=1314MB
+[ring_20d, step=00] epoch 01000/4000, loss(norm)=1.7369e-02, time=41.0s, peak_cuda=1314MB
+[ring_20d, step=00] epoch 01500/4000, loss(norm)=1.3380e-02, time=61.4s, peak_cuda=1314MB
+[ring_20d, step=00] epoch 02000/4000, loss(norm)=1.2579e-02, time=81.8s, peak_cuda=1314MB
+[ring_20d, step=00] epoch 02500/4000, loss(norm)=1.3553e-02, time=102.2s, peak_cuda=1314MB
+[ring_20d, step=00] epoch 03000/4000, loss(norm)=1.0705e-02, time=122.7s, peak_cuda=1314MB
+[ring_20d, step=00] epoch 03500/4000, loss(norm)=1.1020e-02, time=143.3s, peak_cuda=1314MB
+[ring_20d, step=00] epoch 04000/4000, loss(norm)=9.2926e-03, time=163.8s, peak_cuda=1314MB
+[ring_20d, seed=11, K=1] E=8.881e-02, R=1.675e-01, C=4.099e-01, ratio=0.217
+[ring_20d, step=01] residual scale sigma=1.6828e-01
+[ring_20d, step=01] epoch 00001/4000, loss(norm)=1.7165e+01, time=0.1s, peak_cuda=1326MB
+[ring_20d, step=01] epoch 00500/4000, loss(norm)=7.3338e-01, time=25.9s, peak_cuda=1327MB
+[ring_20d, step=01] epoch 01000/4000, loss(norm)=5.2549e-01, time=51.7s, peak_cuda=1327MB
+[ring_20d, step=01] epoch 01500/4000, loss(norm)=4.8316e-01, time=77.5s, peak_cuda=1327MB
+[ring_20d, step=01] epoch 02000/4000, loss(norm)=4.6464e-01, time=103.4s, peak_cuda=1327MB
+[ring_20d, step=01] epoch 02500/4000, loss(norm)=4.4685e-01, time=129.2s, peak_cuda=1327MB
+[ring_20d, step=01] epoch 03000/4000, loss(norm)=4.5493e-01, time=154.9s, peak_cuda=1327MB
+[ring_20d, step=01] epoch 03500/4000, loss(norm)=4.1193e-01, time=180.8s, peak_cuda=1327MB
+[ring_20d, step=01] epoch 04000/4000, loss(norm)=4.2768e-01, time=206.5s, peak_cuda=1327MB
+[ring_20d, seed=11, K=2] E=4.907e-02, R=1.083e-01, C=1.081e-01, ratio=0.454
+[ring_20d, step=02] residual scale sigma=1.0783e-01
+[ring_20d, step=02] epoch 00001/4000, loss(norm)=3.2588e+01, time=0.1s, peak_cuda=1821MB
+[ring_20d, step=02] epoch 00500/4000, loss(norm)=9.6080e-01, time=30.6s, peak_cuda=1822MB
+[ring_20d, step=02] epoch 01000/4000, loss(norm)=9.5335e-01, time=61.2s, peak_cuda=1822MB
+[ring_20d, step=02] epoch 01500/4000, loss(norm)=9.4171e-01, time=91.8s, peak_cuda=1822MB
+[ring_20d, step=02] epoch 02000/4000, loss(norm)=9.7844e-01, time=122.5s, peak_cuda=1822MB
+[ring_20d, step=02] epoch 02500/4000, loss(norm)=9.3561e-01, time=153.2s, peak_cuda=1822MB
+[ring_20d, step=02] epoch 03000/4000, loss(norm)=9.3234e-01, time=183.8s, peak_cuda=1822MB
+[ring_20d, step=02] epoch 03500/4000, loss(norm)=9.0829e-01, time=214.3s, peak_cuda=1822MB
+[ring_20d, step=02] epoch 04000/4000, loss(norm)=9.0946e-01, time=245.0s, peak_cuda=1822MB
+[ring_20d, seed=11, K=3] E=4.482e-02, R=1.022e-01, C=1.028e-01, ratio=0.436
+[ring_20d, step=03] residual scale sigma=1.0261e-01
+[ring_20d, step=03] epoch 00001/4000, loss(norm)=3.0825e+01, time=0.1s, peak_cuda=2703MB
+[ring_20d, step=03] epoch 00500/4000, loss(norm)=9.9272e-01, time=35.4s, peak_cuda=2704MB
+[ring_20d, step=03] epoch 01000/4000, loss(norm)=9.9257e-01, time=70.8s, peak_cuda=2704MB
+[ring_20d, step=03] epoch 01500/4000, loss(norm)=9.7767e-01, time=106.2s, peak_cuda=2704MB
+[ring_20d, step=03] epoch 02000/4000, loss(norm)=1.0117e+00, time=141.8s, peak_cuda=2704MB
+[ring_20d, step=03] epoch 02500/4000, loss(norm)=9.6087e-01, time=177.4s, peak_cuda=2704MB
+[ring_20d, step=03] epoch 03000/4000, loss(norm)=9.5221e-01, time=212.7s, peak_cuda=2704MB
+[ring_20d, step=03] epoch 03500/4000, loss(norm)=9.7723e-01, time=248.0s, peak_cuda=2704MB
+[ring_20d, step=03] epoch 04000/4000, loss(norm)=9.3183e-01, time=283.4s, peak_cuda=2704MB
+[ring_20d, seed=11, K=4] E=4.390e-02, R=9.994e-02, C=1.006e-01, ratio=0.436
+[saved] runs\sweep2_low_r20\figures\quicklook_ring_20d_seed11.pdf
+[saved] runs\sweep2_low_r20\figures\slice_error_ring_20d_seed11.pdf
+[ring_20d, direct] residual scale sigma=1.8769e+00
+[ring_20d, direct] epoch 00001/16000, loss(norm)=1.0346e+00, time=0.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 00500/16000, loss(norm)=2.6906e-02, time=21.5s, peak_cuda=1338MB
+[ring_20d, direct] epoch 01000/16000, loss(norm)=1.7192e-02, time=42.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 01500/16000, loss(norm)=1.2965e-02, time=64.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 02000/16000, loss(norm)=1.1762e-02, time=85.8s, peak_cuda=1338MB
+[ring_20d, direct] epoch 02500/16000, loss(norm)=1.2061e-02, time=107.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 03000/16000, loss(norm)=8.9731e-03, time=128.8s, peak_cuda=1338MB
+[ring_20d, direct] epoch 03500/16000, loss(norm)=9.2112e-03, time=150.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 04000/16000, loss(norm)=7.5612e-03, time=171.8s, peak_cuda=1338MB
+[ring_20d, direct] epoch 04500/16000, loss(norm)=7.7691e-03, time=193.4s, peak_cuda=1338MB
+[ring_20d, direct] epoch 05000/16000, loss(norm)=6.5046e-03, time=215.0s, peak_cuda=1338MB
+[ring_20d, direct] epoch 05500/16000, loss(norm)=5.2118e-03, time=236.8s, peak_cuda=1338MB
+[ring_20d, direct] epoch 06000/16000, loss(norm)=5.0265e-03, time=258.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 06500/16000, loss(norm)=4.4116e-03, time=280.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 07000/16000, loss(norm)=4.8099e-03, time=303.2s, peak_cuda=1338MB
+[ring_20d, direct] epoch 07500/16000, loss(norm)=4.0074e-03, time=325.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 08000/16000, loss(norm)=3.7938e-03, time=346.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 08500/16000, loss(norm)=1.0373e-02, time=368.6s, peak_cuda=1338MB
+[ring_20d, direct] epoch 09000/16000, loss(norm)=3.8602e-03, time=390.4s, peak_cuda=1338MB
+[ring_20d, direct] epoch 09500/16000, loss(norm)=5.4678e-03, time=412.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 10000/16000, loss(norm)=4.5158e-03, time=433.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 10500/16000, loss(norm)=3.4623e-03, time=455.6s, peak_cuda=1338MB
+[ring_20d, direct] epoch 11000/16000, loss(norm)=3.0258e-03, time=477.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 11500/16000, loss(norm)=5.5012e-03, time=498.5s, peak_cuda=1338MB
+[ring_20d, direct] epoch 12000/16000, loss(norm)=3.4357e-03, time=519.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 12500/16000, loss(norm)=2.8911e-02, time=541.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 13000/16000, loss(norm)=8.0205e-03, time=562.7s, peak_cuda=1338MB
+[ring_20d, direct] epoch 13500/16000, loss(norm)=4.6194e-03, time=584.2s, peak_cuda=1338MB
+[ring_20d, direct] epoch 14000/16000, loss(norm)=3.8389e-03, time=605.7s, peak_cuda=1338MB
+[ring_20d, direct] epoch 14500/16000, loss(norm)=2.7585e-03, time=627.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 15000/16000, loss(norm)=6.4955e-03, time=648.6s, peak_cuda=1338MB
+[ring_20d, direct] epoch 15500/16000, loss(norm)=2.5806e-03, time=670.0s, peak_cuda=1338MB
+[ring_20d, direct] epoch 16000/16000, loss(norm)=2.5668e-03, time=691.4s, peak_cuda=1338MB
+[ring_20d, seed=11, direct] E=5.155e-02, R=9.697e-02, time=691s
+
+--- ring_20d, seed=12 ---
+[ring_20d, step=00] residual scale sigma=1.7604e+00
+[ring_20d, step=00] epoch 00001/4000, loss(norm)=1.1248e+00, time=0.1s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 00500/4000, loss(norm)=3.3720e-02, time=20.5s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 01000/4000, loss(norm)=2.1950e-02, time=40.9s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 01500/4000, loss(norm)=1.8509e-02, time=61.3s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 02000/4000, loss(norm)=1.1595e-02, time=81.6s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 02500/4000, loss(norm)=4.2278e-02, time=102.0s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 03000/4000, loss(norm)=1.1537e-02, time=122.3s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 03500/4000, loss(norm)=9.1748e-03, time=142.6s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 04000/4000, loss(norm)=1.0324e-02, time=162.9s, peak_cuda=1309MB
+[ring_20d, seed=12, K=1] E=1.313e-01, R=1.926e-01, C=4.334e-01, ratio=0.303
+[ring_20d, step=01] residual scale sigma=1.9011e-01
+[ring_20d, step=01] epoch 00001/4000, loss(norm)=1.3123e+01, time=0.1s, peak_cuda=1326MB
+[ring_20d, step=01] epoch 00500/4000, loss(norm)=5.7785e-01, time=25.7s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 01000/4000, loss(norm)=4.2342e-01, time=51.4s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 01500/4000, loss(norm)=3.8837e-01, time=77.2s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 02000/4000, loss(norm)=3.9342e-01, time=103.0s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 02500/4000, loss(norm)=3.8294e-01, time=128.8s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 03000/4000, loss(norm)=3.6996e-01, time=154.8s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 03500/4000, loss(norm)=3.7608e-01, time=180.7s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 04000/4000, loss(norm)=3.3328e-01, time=206.6s, peak_cuda=1328MB
+[ring_20d, seed=12, K=2] E=5.068e-02, R=1.121e-01, C=1.128e-01, ratio=0.449
+[ring_20d, step=02] residual scale sigma=1.1317e-01
+[ring_20d, step=02] epoch 00001/4000, loss(norm)=1.8995e+01, time=0.1s, peak_cuda=1821MB
+[ring_20d, step=02] epoch 00500/4000, loss(norm)=9.4638e-01, time=30.9s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 01000/4000, loss(norm)=9.8232e-01, time=61.8s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 01500/4000, loss(norm)=8.9636e-01, time=92.7s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 02000/4000, loss(norm)=9.1536e-01, time=123.5s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 02500/4000, loss(norm)=8.8625e-01, time=154.3s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 03000/4000, loss(norm)=8.8490e-01, time=185.2s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 03500/4000, loss(norm)=8.8660e-01, time=216.0s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 04000/4000, loss(norm)=8.7075e-01, time=246.7s, peak_cuda=1823MB
+[ring_20d, seed=12, K=3] E=4.673e-02, R=1.058e-01, C=1.058e-01, ratio=0.442
+[ring_20d, step=03] residual scale sigma=1.0590e-01
+[ring_20d, step=03] epoch 00001/4000, loss(norm)=3.6166e+01, time=0.1s, peak_cuda=2703MB
+[ring_20d, step=03] epoch 00500/4000, loss(norm)=1.0208e+00, time=35.5s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 01000/4000, loss(norm)=9.9170e-01, time=71.0s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 01500/4000, loss(norm)=1.0566e+00, time=106.6s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 02000/4000, loss(norm)=1.0253e+00, time=141.9s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 02500/4000, loss(norm)=9.7892e-01, time=177.2s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 03000/4000, loss(norm)=9.7543e-01, time=212.5s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 03500/4000, loss(norm)=1.0189e+00, time=247.9s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 04000/4000, loss(norm)=9.3049e-01, time=283.2s, peak_cuda=2705MB
+[ring_20d, seed=12, K=4] E=4.539e-02, R=1.045e-01, C=1.046e-01, ratio=0.434
+[saved] runs\sweep2_low_r20\figures\quicklook_ring_20d_seed12.pdf
+[saved] runs\sweep2_low_r20\figures\slice_error_ring_20d_seed12.pdf
+[ring_20d, direct] residual scale sigma=1.8601e+00
+[ring_20d, direct] epoch 00001/16000, loss(norm)=1.0001e+00, time=0.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 00500/16000, loss(norm)=3.1073e-02, time=21.4s, peak_cuda=1338MB
+[ring_20d, direct] epoch 01000/16000, loss(norm)=3.0704e-02, time=42.7s, peak_cuda=1338MB
+[ring_20d, direct] epoch 01500/16000, loss(norm)=1.1864e-02, time=64.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 02000/16000, loss(norm)=1.0971e-02, time=85.4s, peak_cuda=1338MB
+[ring_20d, direct] epoch 02500/16000, loss(norm)=9.5715e-03, time=106.8s, peak_cuda=1338MB
+[ring_20d, direct] epoch 03000/16000, loss(norm)=1.0726e-02, time=128.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 03500/16000, loss(norm)=9.9772e-03, time=149.6s, peak_cuda=1338MB
+[ring_20d, direct] epoch 04000/16000, loss(norm)=8.0894e-03, time=171.0s, peak_cuda=1338MB
+[ring_20d, direct] epoch 04500/16000, loss(norm)=1.0778e-02, time=192.5s, peak_cuda=1338MB
+[ring_20d, direct] epoch 05000/16000, loss(norm)=6.2363e-03, time=213.8s, peak_cuda=1338MB
+[ring_20d, direct] epoch 05500/16000, loss(norm)=9.7184e-03, time=235.2s, peak_cuda=1338MB
+[ring_20d, direct] epoch 06000/16000, loss(norm)=9.2586e-03, time=256.6s, peak_cuda=1338MB
+[ring_20d, direct] epoch 06500/16000, loss(norm)=5.6146e-03, time=278.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 07000/16000, loss(norm)=4.7704e-03, time=299.7s, peak_cuda=1338MB
+[ring_20d, direct] epoch 07500/16000, loss(norm)=9.3755e-03, time=321.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 08000/16000, loss(norm)=4.6923e-03, time=342.5s, peak_cuda=1338MB
+[ring_20d, direct] epoch 08500/16000, loss(norm)=4.7991e-03, time=364.0s, peak_cuda=1338MB
+[ring_20d, direct] epoch 09000/16000, loss(norm)=5.4788e-03, time=385.5s, peak_cuda=1338MB
+[ring_20d, direct] epoch 09500/16000, loss(norm)=3.9258e-03, time=406.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 10000/16000, loss(norm)=3.5392e-03, time=428.4s, peak_cuda=1338MB
+[ring_20d, direct] epoch 10500/16000, loss(norm)=3.4172e-03, time=450.0s, peak_cuda=1338MB
+[ring_20d, direct] epoch 11000/16000, loss(norm)=3.7428e-03, time=471.5s, peak_cuda=1338MB
+[ring_20d, direct] epoch 11500/16000, loss(norm)=3.7500e-03, time=492.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 12000/16000, loss(norm)=2.9300e-03, time=514.4s, peak_cuda=1338MB
+[ring_20d, direct] epoch 12500/16000, loss(norm)=3.0987e-03, time=535.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 13000/16000, loss(norm)=7.5452e-03, time=557.5s, peak_cuda=1338MB
+[ring_20d, direct] epoch 13500/16000, loss(norm)=5.8051e-03, time=579.0s, peak_cuda=1338MB
+[ring_20d, direct] epoch 14000/16000, loss(norm)=2.9630e-03, time=600.5s, peak_cuda=1338MB
+[ring_20d, direct] epoch 14500/16000, loss(norm)=8.9048e-03, time=621.8s, peak_cuda=1338MB
+[ring_20d, direct] epoch 15000/16000, loss(norm)=3.4612e-03, time=643.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 15500/16000, loss(norm)=2.6640e-03, time=664.7s, peak_cuda=1338MB
+[ring_20d, direct] epoch 16000/16000, loss(norm)=5.7499e-03, time=686.2s, peak_cuda=1338MB
+[ring_20d, seed=12, direct] E=1.162e-01, R=1.439e-01, time=686s
+
+--- ring_20d, seed=13 ---
+[ring_20d, step=00] residual scale sigma=1.7675e+00
+[ring_20d, step=00] epoch 00001/4000, loss(norm)=1.1448e+00, time=0.0s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 00500/4000, loss(norm)=3.1581e-02, time=20.4s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 01000/4000, loss(norm)=2.5286e-02, time=40.7s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 01500/4000, loss(norm)=1.5421e-02, time=61.0s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 02000/4000, loss(norm)=1.2757e-02, time=81.4s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 02500/4000, loss(norm)=1.0649e-02, time=101.8s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 03000/4000, loss(norm)=1.0996e-02, time=122.2s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 03500/4000, loss(norm)=9.8491e-03, time=142.5s, peak_cuda=1309MB
+[ring_20d, step=00] epoch 04000/4000, loss(norm)=1.0133e-02, time=162.9s, peak_cuda=1309MB
+[ring_20d, seed=13, K=1] E=8.796e-02, R=1.707e-01, C=4.101e-01, ratio=0.214
+[ring_20d, step=01] residual scale sigma=1.7241e-01
+[ring_20d, step=01] epoch 00001/4000, loss(norm)=1.2418e+01, time=0.1s, peak_cuda=1326MB
+[ring_20d, step=01] epoch 00500/4000, loss(norm)=6.8845e-01, time=25.8s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 01000/4000, loss(norm)=5.2911e-01, time=51.5s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 01500/4000, loss(norm)=5.0959e-01, time=77.1s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 02000/4000, loss(norm)=4.6563e-01, time=102.7s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 02500/4000, loss(norm)=4.6329e-01, time=128.4s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 03000/4000, loss(norm)=4.2084e-01, time=154.1s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 03500/4000, loss(norm)=4.2414e-01, time=179.8s, peak_cuda=1328MB
+[ring_20d, step=01] epoch 04000/4000, loss(norm)=4.0117e-01, time=205.5s, peak_cuda=1328MB
+[ring_20d, seed=13, K=2] E=5.321e-02, R=1.119e-01, C=1.132e-01, ratio=0.470
+[ring_20d, step=02] residual scale sigma=1.1251e-01
+[ring_20d, step=02] epoch 00001/4000, loss(norm)=2.2887e+01, time=0.1s, peak_cuda=1821MB
+[ring_20d, step=02] epoch 00500/4000, loss(norm)=8.9983e-01, time=30.6s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 01000/4000, loss(norm)=9.2531e-01, time=61.2s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 01500/4000, loss(norm)=8.9944e-01, time=91.7s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 02000/4000, loss(norm)=8.7311e-01, time=122.2s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 02500/4000, loss(norm)=9.0067e-01, time=152.7s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 03000/4000, loss(norm)=9.2330e-01, time=183.2s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 03500/4000, loss(norm)=8.7397e-01, time=213.7s, peak_cuda=1823MB
+[ring_20d, step=02] epoch 04000/4000, loss(norm)=8.3640e-01, time=244.2s, peak_cuda=1823MB
+[ring_20d, seed=13, K=3] E=4.643e-02, R=1.040e-01, C=1.048e-01, ratio=0.443
+[ring_20d, step=03] residual scale sigma=1.0431e-01
+[ring_20d, step=03] epoch 00001/4000, loss(norm)=2.4284e+01, time=0.1s, peak_cuda=2703MB
+[ring_20d, step=03] epoch 00500/4000, loss(norm)=1.0030e+00, time=35.3s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 01000/4000, loss(norm)=9.6004e-01, time=70.7s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 01500/4000, loss(norm)=9.8075e-01, time=106.1s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 02000/4000, loss(norm)=9.7810e-01, time=141.4s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 02500/4000, loss(norm)=9.7969e-01, time=176.8s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 03000/4000, loss(norm)=9.3736e-01, time=212.1s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 03500/4000, loss(norm)=1.0023e+00, time=247.4s, peak_cuda=2705MB
+[ring_20d, step=03] epoch 04000/4000, loss(norm)=9.4355e-01, time=282.7s, peak_cuda=2705MB
+[ring_20d, seed=13, K=4] E=4.432e-02, R=1.016e-01, C=1.012e-01, ratio=0.438
+[saved] runs\sweep2_low_r20\figures\quicklook_ring_20d_seed13.pdf
+[saved] runs\sweep2_low_r20\figures\slice_error_ring_20d_seed13.pdf
+[ring_20d, direct] residual scale sigma=1.9906e+00
+[ring_20d, direct] epoch 00001/16000, loss(norm)=9.8402e-01, time=0.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 00500/16000, loss(norm)=2.6966e-02, time=21.4s, peak_cuda=1338MB
+[ring_20d, direct] epoch 01000/16000, loss(norm)=1.7526e-02, time=42.8s, peak_cuda=1338MB
+[ring_20d, direct] epoch 01500/16000, loss(norm)=1.0843e-02, time=64.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 02000/16000, loss(norm)=9.5643e-03, time=85.7s, peak_cuda=1338MB
+[ring_20d, direct] epoch 02500/16000, loss(norm)=7.8504e-03, time=107.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 03000/16000, loss(norm)=8.0340e-03, time=128.6s, peak_cuda=1338MB
+[ring_20d, direct] epoch 03500/16000, loss(norm)=1.0568e-02, time=149.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 04000/16000, loss(norm)=5.9100e-03, time=171.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 04500/16000, loss(norm)=6.0427e-03, time=192.7s, peak_cuda=1338MB
+[ring_20d, direct] epoch 05000/16000, loss(norm)=6.5210e-03, time=213.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 05500/16000, loss(norm)=4.7550e-03, time=235.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 06000/16000, loss(norm)=9.1406e-03, time=256.7s, peak_cuda=1338MB
+[ring_20d, direct] epoch 06500/16000, loss(norm)=4.4153e-03, time=278.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 07000/16000, loss(norm)=3.8260e-03, time=299.4s, peak_cuda=1338MB
+[ring_20d, direct] epoch 07500/16000, loss(norm)=6.6903e-03, time=320.8s, peak_cuda=1338MB
+[ring_20d, direct] epoch 08000/16000, loss(norm)=4.0977e-03, time=342.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 08500/16000, loss(norm)=6.5821e-03, time=363.7s, peak_cuda=1338MB
+[ring_20d, direct] epoch 09000/16000, loss(norm)=3.3921e-03, time=385.2s, peak_cuda=1338MB
+[ring_20d, direct] epoch 09500/16000, loss(norm)=3.1015e-03, time=406.6s, peak_cuda=1338MB
+[ring_20d, direct] epoch 10000/16000, loss(norm)=2.9386e-03, time=428.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 10500/16000, loss(norm)=7.6784e-03, time=449.5s, peak_cuda=1338MB
+[ring_20d, direct] epoch 11000/16000, loss(norm)=3.7245e-02, time=470.9s, peak_cuda=1338MB
+[ring_20d, direct] epoch 11500/16000, loss(norm)=3.1431e-03, time=492.3s, peak_cuda=1338MB
+[ring_20d, direct] epoch 12000/16000, loss(norm)=7.9923e-03, time=513.7s, peak_cuda=1338MB
+[ring_20d, direct] epoch 12500/16000, loss(norm)=3.2543e-03, time=535.2s, peak_cuda=1338MB
+[ring_20d, direct] epoch 13000/16000, loss(norm)=3.2733e-03, time=556.5s, peak_cuda=1338MB
+[ring_20d, direct] epoch 13500/16000, loss(norm)=2.6601e-03, time=578.0s, peak_cuda=1338MB
+[ring_20d, direct] epoch 14000/16000, loss(norm)=2.7714e-03, time=599.4s, peak_cuda=1338MB
+[ring_20d, direct] epoch 14500/16000, loss(norm)=3.7010e-03, time=620.8s, peak_cuda=1338MB
+[ring_20d, direct] epoch 15000/16000, loss(norm)=2.3329e-03, time=642.1s, peak_cuda=1338MB
+[ring_20d, direct] epoch 15500/16000, loss(norm)=4.8745e-03, time=663.4s, peak_cuda=1338MB
+[ring_20d, direct] epoch 16000/16000, loss(norm)=2.1775e-03, time=684.8s, peak_cuda=1338MB
+[ring_20d, seed=13, direct] E=5.309e-02, R=9.617e-02, time=685s
+
+Done in 80.1 min.
+Outputs: <workspace>/newton_exp\paper\code_final\runs\sweep2_low_r20
+++ date
++ echo 'STAGE2 chain d50 d100 seed 11 : Tue Aug  4 16:54:38     2026'
+STAGE2 chain d50 d100 seed 11 : Tue Aug  4 16:54:38     2026
++ <user>/anaconda3/python.exe dim_sweep_newton_pinn.py --preset paper --families chain --dims 50 100 --seeds 11 --with_direct --save_models --outdir runs/sweep2_chain_high
+================================================================================
+Dimension-sweep Newton--PINN benchmark
+code version : dim_sweep_newton_pinn_v3_dense_time_part
+time         : 2026-08-04 16:54:39
+device       : cuda (NVIDIA GeForce RTX 5070)
+torch        : 2.11.0+cu128
+families     : ['chain']
+dims         : [50, 100]
+seeds        : [11]
+newton_steps : 4, epochs/step 4000
+with_direct  : True (16000 epochs)
+output       : <workspace>/newton_exp\paper\code_final\runs\sweep2_chain_high
+================================================================================
+[selfcheck] chain_50d: max|Du err|=2.22e-16, max|Lap err|=5.33e-15, max|residual|=5.33e-15
+
+=== chain_50d: train_batch=2048, eval_batch=1024, mc_eval=40000, M2=0.640 ===
+
+--- chain_50d, seed=11 ---
+[chain_50d, step=00] residual scale sigma=1.7759e+00
+[chain_50d, step=00] epoch 00001/4000, loss(norm)=1.1993e+00, time=0.2s, peak_cuda=1715MB
+[chain_50d, step=00] epoch 00500/4000, loss(norm)=3.8002e-01, time=43.4s, peak_cuda=1717MB
+[chain_50d, step=00] epoch 01000/4000, loss(norm)=1.7521e-01, time=87.0s, peak_cuda=1717MB
+[chain_50d, step=00] epoch 01500/4000, loss(norm)=1.0155e-01, time=130.0s, peak_cuda=1717MB
+[chain_50d, step=00] epoch 02000/4000, loss(norm)=7.0406e-02, time=173.0s, peak_cuda=1717MB
+[chain_50d, step=00] epoch 02500/4000, loss(norm)=5.5582e-02, time=216.1s, peak_cuda=1717MB
+[chain_50d, step=00] epoch 03000/4000, loss(norm)=4.3715e-02, time=259.2s, peak_cuda=1717MB
+[chain_50d, step=00] epoch 03500/4000, loss(norm)=4.4878e-02, time=302.3s, peak_cuda=1717MB
+[chain_50d, step=00] epoch 04000/4000, loss(norm)=5.2165e-02, time=345.3s, peak_cuda=1717MB
+[chain_50d, seed=11, K=1] E=2.565e-01, R=3.908e-01, C=5.977e-01, ratio=0.429
+[chain_50d, step=01] residual scale sigma=3.8832e-01
+[chain_50d, step=01] epoch 00001/4000, loss(norm)=5.0440e+00, time=0.2s, peak_cuda=1728MB
+[chain_50d, step=01] epoch 00500/4000, loss(norm)=6.2559e-01, time=55.5s, peak_cuda=1729MB
+[chain_50d, step=01] epoch 01000/4000, loss(norm)=5.6348e-01, time=110.9s, peak_cuda=1729MB
+[chain_50d, step=01] epoch 01500/4000, loss(norm)=5.0226e-01, time=166.5s, peak_cuda=1729MB
+[chain_50d, step=01] epoch 02000/4000, loss(norm)=5.0739e-01, time=222.0s, peak_cuda=1729MB
+[chain_50d, step=01] epoch 02500/4000, loss(norm)=4.9839e-01, time=277.6s, peak_cuda=1729MB
+[chain_50d, step=01] epoch 03000/4000, loss(norm)=4.8720e-01, time=333.1s, peak_cuda=1729MB
+[chain_50d, step=01] epoch 03500/4000, loss(norm)=4.5181e-01, time=388.6s, peak_cuda=1729MB
+[chain_50d, step=01] epoch 04000/4000, loss(norm)=4.7262e-01, time=443.8s, peak_cuda=1729MB
+[chain_50d, seed=11, K=2] E=1.243e-01, R=2.645e-01, C=2.681e-01, ratio=0.464
+[chain_50d, step=02] residual scale sigma=2.6459e-01
+[chain_50d, step=02] epoch 00001/4000, loss(norm)=6.0289e+00, time=0.2s, peak_cuda=2431MB
+[chain_50d, step=02] epoch 00500/4000, loss(norm)=9.5337e-01, time=68.1s, peak_cuda=2433MB
+[chain_50d, step=02] epoch 01000/4000, loss(norm)=9.6821e-01, time=136.2s, peak_cuda=2433MB
+[chain_50d, step=02] epoch 01500/4000, loss(norm)=9.1033e-01, time=204.4s, peak_cuda=2433MB
+[chain_50d, step=02] epoch 02000/4000, loss(norm)=8.6533e-01, time=272.4s, peak_cuda=2433MB
+[chain_50d, step=02] epoch 02500/4000, loss(norm)=9.4191e-01, time=340.5s, peak_cuda=2433MB
+[chain_50d, step=02] epoch 03000/4000, loss(norm)=8.9039e-01, time=408.4s, peak_cuda=2433MB
+[chain_50d, step=02] epoch 03500/4000, loss(norm)=8.7532e-01, time=476.2s, peak_cuda=2433MB
+[chain_50d, step=02] epoch 04000/4000, loss(norm)=8.2572e-01, time=544.1s, peak_cuda=2433MB
+[chain_50d, seed=11, K=3] E=1.155e-01, R=2.439e-01, C=2.430e-01, ratio=0.475
+[chain_50d, step=03] residual scale sigma=2.4482e-01
+[chain_50d, step=03] epoch 00001/4000, loss(norm)=1.3173e+01, time=0.3s, peak_cuda=3605MB
+[chain_50d, step=03] epoch 00500/4000, loss(norm)=1.0296e+00, time=79.6s, peak_cuda=3607MB
+[chain_50d, step=03] epoch 01000/4000, loss(norm)=9.3601e-01, time=159.2s, peak_cuda=3607MB
+[chain_50d, step=03] epoch 01500/4000, loss(norm)=9.5439e-01, time=238.8s, peak_cuda=3607MB
+[chain_50d, step=03] epoch 02000/4000, loss(norm)=9.7958e-01, time=318.4s, peak_cuda=3607MB
+[chain_50d, step=03] epoch 02500/4000, loss(norm)=1.0118e+00, time=398.1s, peak_cuda=3607MB
+[chain_50d, step=03] epoch 03000/4000, loss(norm)=9.7736e-01, time=477.6s, peak_cuda=3607MB
+[chain_50d, step=03] epoch 03500/4000, loss(norm)=9.2634e-01, time=557.1s, peak_cuda=3607MB
+[chain_50d, step=03] epoch 04000/4000, loss(norm)=9.4175e-01, time=636.8s, peak_cuda=3607MB
+[chain_50d, seed=11, K=4] E=1.107e-01, R=2.365e-01, C=2.365e-01, ratio=0.468
+[saved] runs\sweep2_chain_high\figures\quicklook_chain_50d_seed11.pdf
+[saved] runs\sweep2_chain_high\figures\slice_error_chain_50d_seed11.pdf
+[chain_50d, direct] residual scale sigma=1.8888e+00
+[chain_50d, direct] epoch 00001/16000, loss(norm)=9.7864e-01, time=0.1s, peak_cuda=1760MB
+[chain_50d, direct] epoch 00500/16000, loss(norm)=3.1330e-01, time=44.7s, peak_cuda=1761MB
+[chain_50d, direct] epoch 01000/16000, loss(norm)=1.5955e-01, time=89.4s, peak_cuda=1761MB
+[chain_50d, direct] epoch 01500/16000, loss(norm)=7.8680e-02, time=134.0s, peak_cuda=1761MB
+[chain_50d, direct] epoch 02000/16000, loss(norm)=5.2569e-02, time=178.6s, peak_cuda=1761MB
+[chain_50d, direct] epoch 02500/16000, loss(norm)=4.1849e-02, time=223.2s, peak_cuda=1761MB
+[chain_50d, direct] epoch 03000/16000, loss(norm)=3.8114e-02, time=267.9s, peak_cuda=1761MB
+[chain_50d, direct] epoch 03500/16000, loss(norm)=4.1300e-02, time=312.5s, peak_cuda=1761MB
+[chain_50d, direct] epoch 04000/16000, loss(norm)=3.4983e-02, time=357.0s, peak_cuda=1761MB
+[chain_50d, direct] epoch 04500/16000, loss(norm)=3.0424e-02, time=401.4s, peak_cuda=1761MB
+[chain_50d, direct] epoch 05000/16000, loss(norm)=3.2750e-02, time=445.9s, peak_cuda=1761MB
+[chain_50d, direct] epoch 05500/16000, loss(norm)=2.9583e-02, time=490.4s, peak_cuda=1761MB
+[chain_50d, direct] epoch 06000/16000, loss(norm)=2.8597e-02, time=534.9s, peak_cuda=1761MB
+[chain_50d, direct] epoch 06500/16000, loss(norm)=2.8176e-02, time=579.5s, peak_cuda=1761MB
+[chain_50d, direct] epoch 07000/16000, loss(norm)=2.9957e-02, time=624.1s, peak_cuda=1761MB
+[chain_50d, direct] epoch 07500/16000, loss(norm)=3.0789e-02, time=668.7s, peak_cuda=1761MB
+[chain_50d, direct] epoch 08000/16000, loss(norm)=4.7070e-02, time=713.1s, peak_cuda=1761MB
+[chain_50d, direct] epoch 08500/16000, loss(norm)=2.7420e-02, time=757.7s, peak_cuda=1761MB
+[chain_50d, direct] epoch 09000/16000, loss(norm)=2.7357e-02, time=802.3s, peak_cuda=1761MB
+[chain_50d, direct] epoch 09500/16000, loss(norm)=2.8164e-02, time=846.9s, peak_cuda=1761MB
+[chain_50d, direct] epoch 10000/16000, loss(norm)=3.2767e-02, time=891.5s, peak_cuda=1761MB

@@ -1,0 +1,678 @@
++ PY=<user>/anaconda3/python.exe
++ cd <workspace>/newton_exp/paper/code_final
++ export KMP_DUPLICATE_LIB_OK=TRUE
++ KMP_DUPLICATE_LIB_OK=TRUE
++ export PYTHONUNBUFFERED=1
++ PYTHONUNBUFFERED=1
+++ date
++ echo 'PHASE1 block A: seq+comp ring d=50 seeds 11 12 : Tue Aug 11 01:44:52     2026'
+PHASE1 block A: seq+comp ring d=50 seeds 11 12 : Tue Aug 11 01:44:52     2026
++ <user>/anaconda3/python.exe phase1_baselines.py --families ring --dims 50 --seeds 11 12 --methods seq comp --save_models --outdir runs/phase1_ring50
+device: cuda | methods: ['seq', 'comp'] | outdir: <workspace>/newton_exp\paper\code_final\runs\phase1_ring50
+[selfcheck] ring_50d: max|Du err|=8.88e-16, max|Lap err|=5.68e-14, max|residual|=5.68e-14
+[ring_50d, seq k=0 seed=11] residual scale sigma=1.8890e+00
+[ring_50d, seq k=0 seed=11] epoch 00001/4000, loss(norm)=9.6745e-01, time=0.2s, peak_cuda=1798MB
+[ring_50d, seq k=0 seed=11] epoch 00500/4000, loss(norm)=3.3798e-01, time=115.2s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=11] epoch 01000/4000, loss(norm)=1.7653e-01, time=239.4s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=11] epoch 01500/4000, loss(norm)=1.0052e-01, time=363.8s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=11] epoch 02000/4000, loss(norm)=8.8782e-02, time=488.1s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=11] epoch 02500/4000, loss(norm)=4.4646e-02, time=612.7s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=11] epoch 03000/4000, loss(norm)=5.9799e-02, time=737.1s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=11] epoch 03500/4000, loss(norm)=3.8657e-02, time=861.9s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=11] epoch 04000/4000, loss(norm)=3.6090e-02, time=986.6s, peak_cuda=1800MB
+[seq ring_50d seed=11 K=1] E=2.086e-01 R=3.616e-01
+[ring_50d, seq k=1 seed=11] residual scale sigma=8.2807e-01
+[ring_50d, seq k=1 seed=11] epoch 00001/4000, loss(norm)=1.0094e+00, time=0.5s, peak_cuda=2972MB
+[ring_50d, seq k=1 seed=11] epoch 00500/4000, loss(norm)=1.3916e-01, time=202.7s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=11] epoch 01000/4000, loss(norm)=1.1860e-01, time=405.1s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=11] epoch 01500/4000, loss(norm)=1.0865e-01, time=607.5s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=11] epoch 02000/4000, loss(norm)=1.1008e-01, time=809.3s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=11] epoch 02500/4000, loss(norm)=1.0262e-01, time=1012.0s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=11] epoch 03000/4000, loss(norm)=1.0469e-01, time=1214.4s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=11] epoch 03500/4000, loss(norm)=1.0361e-01, time=1416.5s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=11] epoch 04000/4000, loss(norm)=1.0457e-01, time=1618.2s, peak_cuda=2974MB
+[seq ring_50d seed=11 K=2] E=1.246e-01 R=2.626e-01
+[ring_50d, seq k=2 seed=11] residual scale sigma=6.6633e-01
+[ring_50d, seq k=2 seed=11] epoch 00001/4000, loss(norm)=1.0277e+00, time=0.7s, peak_cuda=4146MB
+[ring_50d, seq k=2 seed=11] epoch 00500/4000, loss(norm)=1.5874e-01, time=282.3s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=11] epoch 01000/4000, loss(norm)=1.4710e-01, time=564.7s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=11] epoch 01500/4000, loss(norm)=1.3843e-01, time=846.4s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=11] epoch 02000/4000, loss(norm)=1.5184e-01, time=1128.2s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=11] epoch 02500/4000, loss(norm)=1.4135e-01, time=1409.0s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=11] epoch 03000/4000, loss(norm)=1.4630e-01, time=1690.8s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=11] epoch 03500/4000, loss(norm)=1.3827e-01, time=1972.8s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=11] epoch 04000/4000, loss(norm)=1.2152e-01, time=2254.5s, peak_cuda=4148MB
+[seq ring_50d seed=11 K=3] E=1.143e-01 R=2.460e-01
+[ring_50d, seq k=3 seed=11] residual scale sigma=8.6647e-01
+[ring_50d, seq k=3 seed=11] epoch 00001/4000, loss(norm)=1.0603e+00, time=1.0s, peak_cuda=5320MB
+[ring_50d, seq k=3 seed=11] epoch 00500/4000, loss(norm)=7.9461e-02, time=361.6s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=11] epoch 01000/4000, loss(norm)=7.5220e-02, time=722.6s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=11] epoch 01500/4000, loss(norm)=8.1100e-02, time=1083.5s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=11] epoch 02000/4000, loss(norm)=7.7602e-02, time=1444.5s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=11] epoch 02500/4000, loss(norm)=7.5598e-02, time=1805.3s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=11] epoch 03000/4000, loss(norm)=7.2053e-02, time=2166.3s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=11] epoch 03500/4000, loss(norm)=7.8620e-02, time=2527.3s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=11] epoch 04000/4000, loss(norm)=7.3862e-02, time=2888.1s, peak_cuda=5321MB
+[seq ring_50d seed=11 K=4] E=1.118e-01 R=2.402e-01
+[ring_50d, comp seed=11] residual scale sigma=2.2645e+00
+[ring_50d, comp seed=11] epoch 00001/16000, loss(norm)=9.5789e-01, time=0.9s, peak_cuda=6224MB
+[ring_50d, comp seed=11] epoch 00500/16000, loss(norm)=9.9663e-02, time=329.2s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 01000/16000, loss(norm)=4.5658e-02, time=657.9s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 01500/16000, loss(norm)=3.2917e-02, time=986.7s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 02000/16000, loss(norm)=2.5117e-02, time=1314.9s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 02500/16000, loss(norm)=2.0895e-02, time=1644.0s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 03000/16000, loss(norm)=1.4680e-02, time=1972.3s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 03500/16000, loss(norm)=1.5468e-02, time=2301.0s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 04000/16000, loss(norm)=1.4227e-02, time=2629.8s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 04500/16000, loss(norm)=3.3906e-02, time=2958.4s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 05000/16000, loss(norm)=1.5100e-02, time=3287.8s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 05500/16000, loss(norm)=1.2350e-02, time=3616.5s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 06000/16000, loss(norm)=1.2230e-02, time=3944.8s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 06500/16000, loss(norm)=1.6332e-02, time=4272.9s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 07000/16000, loss(norm)=1.1533e-02, time=4601.2s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 07500/16000, loss(norm)=1.1868e-02, time=4929.7s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 08000/16000, loss(norm)=1.1089e-02, time=5259.0s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 08500/16000, loss(norm)=9.2710e-03, time=5587.4s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 09000/16000, loss(norm)=1.0186e-02, time=5915.4s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 09500/16000, loss(norm)=9.4327e-03, time=6243.8s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 10000/16000, loss(norm)=9.0601e-03, time=6571.9s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 10500/16000, loss(norm)=9.5005e-03, time=6900.5s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 11000/16000, loss(norm)=8.4614e-03, time=7228.9s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 11500/16000, loss(norm)=9.2442e-03, time=7557.6s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 12000/16000, loss(norm)=7.3356e-03, time=7886.3s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 12500/16000, loss(norm)=7.7467e-03, time=8214.9s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 13000/16000, loss(norm)=7.8029e-03, time=8543.0s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 13500/16000, loss(norm)=8.5337e-03, time=8871.3s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 14000/16000, loss(norm)=8.6875e-03, time=9199.6s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 14500/16000, loss(norm)=7.6073e-03, time=9528.0s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 15000/16000, loss(norm)=7.5742e-03, time=9856.4s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 15500/16000, loss(norm)=7.3096e-03, time=10185.2s, peak_cuda=6229MB
+[ring_50d, comp seed=11] epoch 16000/16000, loss(norm)=8.2968e-03, time=10513.4s, peak_cuda=6229MB
+[comp ring_50d seed=11] E=1.537e-01 R=2.204e-01
+[ring_50d, seq k=0 seed=12] residual scale sigma=1.9426e+00
+[ring_50d, seq k=0 seed=12] epoch 00001/4000, loss(norm)=1.0232e+00, time=0.3s, peak_cuda=1798MB
+[ring_50d, seq k=0 seed=12] epoch 00500/4000, loss(norm)=3.4358e-01, time=125.2s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=12] epoch 01000/4000, loss(norm)=1.6006e-01, time=250.0s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=12] epoch 01500/4000, loss(norm)=9.3201e-02, time=374.6s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=12] epoch 02000/4000, loss(norm)=6.4200e-02, time=499.6s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=12] epoch 02500/4000, loss(norm)=4.7931e-02, time=624.5s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=12] epoch 03000/4000, loss(norm)=4.6895e-02, time=749.1s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=12] epoch 03500/4000, loss(norm)=3.9699e-02, time=873.7s, peak_cuda=1800MB
+[ring_50d, seq k=0 seed=12] epoch 04000/4000, loss(norm)=4.0340e-02, time=998.1s, peak_cuda=1800MB
+[seq ring_50d seed=12 K=1] E=3.052e-01 R=4.334e-01
+[ring_50d, seq k=1 seed=12] residual scale sigma=8.8138e-01
+[ring_50d, seq k=1 seed=12] epoch 00001/4000, loss(norm)=9.7457e-01, time=0.5s, peak_cuda=2972MB
+[ring_50d, seq k=1 seed=12] epoch 00500/4000, loss(norm)=1.3538e-01, time=202.2s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=12] epoch 01000/4000, loss(norm)=1.0984e-01, time=404.9s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=12] epoch 01500/4000, loss(norm)=1.0614e-01, time=607.5s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=12] epoch 02000/4000, loss(norm)=9.7882e-02, time=809.6s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=12] epoch 02500/4000, loss(norm)=9.5235e-02, time=1012.3s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=12] epoch 03000/4000, loss(norm)=9.9228e-02, time=1214.5s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=12] epoch 03500/4000, loss(norm)=8.6700e-02, time=1417.0s, peak_cuda=2974MB
+[ring_50d, seq k=1 seed=12] epoch 04000/4000, loss(norm)=8.8583e-02, time=1620.1s, peak_cuda=2974MB
+[seq ring_50d seed=12 K=2] E=1.268e-01 R=2.628e-01
+[ring_50d, seq k=2 seed=12] residual scale sigma=9.1935e-01
+[ring_50d, seq k=2 seed=12] epoch 00001/4000, loss(norm)=9.4791e-01, time=0.7s, peak_cuda=4146MB
+[ring_50d, seq k=2 seed=12] epoch 00500/4000, loss(norm)=7.9930e-02, time=282.1s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=12] epoch 01000/4000, loss(norm)=8.1860e-02, time=563.8s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=12] epoch 01500/4000, loss(norm)=7.7284e-02, time=845.4s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=12] epoch 02000/4000, loss(norm)=8.2107e-02, time=1127.0s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=12] epoch 02500/4000, loss(norm)=7.1555e-02, time=1408.5s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=12] epoch 03000/4000, loss(norm)=7.4400e-02, time=1690.4s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=12] epoch 03500/4000, loss(norm)=7.3817e-02, time=1972.7s, peak_cuda=4148MB
+[ring_50d, seq k=2 seed=12] epoch 04000/4000, loss(norm)=6.9364e-02, time=2254.4s, peak_cuda=4148MB
+[seq ring_50d seed=12 K=3] E=1.160e-01 R=2.453e-01
+[ring_50d, seq k=3 seed=12] residual scale sigma=6.7962e-01
+[ring_50d, seq k=3 seed=12] epoch 00001/4000, loss(norm)=9.7540e-01, time=1.0s, peak_cuda=5320MB
+[ring_50d, seq k=3 seed=12] epoch 00500/4000, loss(norm)=1.2592e-01, time=361.2s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=12] epoch 01000/4000, loss(norm)=1.3222e-01, time=722.3s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=12] epoch 01500/4000, loss(norm)=1.3822e-01, time=1083.3s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=12] epoch 02000/4000, loss(norm)=1.1565e-01, time=1444.4s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=12] epoch 02500/4000, loss(norm)=1.2739e-01, time=1805.5s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=12] epoch 03000/4000, loss(norm)=1.3280e-01, time=2166.5s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=12] epoch 03500/4000, loss(norm)=1.1967e-01, time=2527.6s, peak_cuda=5321MB
+[ring_50d, seq k=3 seed=12] epoch 04000/4000, loss(norm)=1.3451e-01, time=2888.6s, peak_cuda=5321MB
+[seq ring_50d seed=12 K=4] E=1.130e-01 R=2.364e-01
+[ring_50d, comp seed=12] residual scale sigma=2.3721e+00
+[ring_50d, comp seed=12] epoch 00001/16000, loss(norm)=1.0354e+00, time=0.9s, peak_cuda=6224MB
+[ring_50d, comp seed=12] epoch 00500/16000, loss(norm)=8.5337e-02, time=328.6s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 01000/16000, loss(norm)=3.9819e-02, time=656.5s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 01500/16000, loss(norm)=3.0900e-02, time=984.5s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 02000/16000, loss(norm)=2.0238e-02, time=1313.5s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 02500/16000, loss(norm)=1.6701e-02, time=1641.8s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 03000/16000, loss(norm)=1.6115e-02, time=1969.9s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 03500/16000, loss(norm)=1.6466e-02, time=2298.2s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 04000/16000, loss(norm)=1.2897e-02, time=2626.1s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 04500/16000, loss(norm)=1.3861e-02, time=2954.7s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 05000/16000, loss(norm)=1.1171e-02, time=3282.9s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 05500/16000, loss(norm)=1.1781e-02, time=3610.8s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 06000/16000, loss(norm)=1.1213e-02, time=3938.8s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 06500/16000, loss(norm)=1.1188e-02, time=4269.3s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 07000/16000, loss(norm)=8.7600e-03, time=4607.7s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 07500/16000, loss(norm)=1.0155e-02, time=4946.5s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 08000/16000, loss(norm)=9.8083e-03, time=5284.7s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 08500/16000, loss(norm)=1.1090e-02, time=5561.8s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 09000/16000, loss(norm)=1.0738e-02, time=5685.2s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 09500/16000, loss(norm)=9.7314e-03, time=5808.8s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 10000/16000, loss(norm)=1.0404e-02, time=5929.1s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 10500/16000, loss(norm)=1.0036e-02, time=6049.4s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 11000/16000, loss(norm)=8.4547e-03, time=6169.5s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 11500/16000, loss(norm)=9.9992e-03, time=6289.7s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 12000/16000, loss(norm)=1.0028e-02, time=6409.8s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 12500/16000, loss(norm)=5.8661e-03, time=6529.9s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 13000/16000, loss(norm)=7.9353e-03, time=6650.1s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 13500/16000, loss(norm)=6.7753e-03, time=6770.3s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 14000/16000, loss(norm)=8.8693e-03, time=6890.4s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 14500/16000, loss(norm)=8.2770e-03, time=7010.5s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 15000/16000, loss(norm)=6.8715e-03, time=7130.7s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 15500/16000, loss(norm)=6.7523e-03, time=7250.8s, peak_cuda=6229MB
+[ring_50d, comp seed=12] epoch 16000/16000, loss(norm)=8.2158e-03, time=7371.1s, peak_cuda=6229MB
+[comp ring_50d seed=12] E=1.497e-01 R=2.099e-01
+Done in 558.2 min. Outputs: <workspace>/newton_exp\paper\code_final\runs\phase1_ring50
+++ date
++ echo 'PHASE1 block B: seq+comp ring d=100 seeds 11 12 : Tue Aug 11 11:03:06     2026'
+PHASE1 block B: seq+comp ring d=100 seeds 11 12 : Tue Aug 11 11:03:06     2026
++ <user>/anaconda3/python.exe phase1_baselines.py --families ring --dims 100 --seeds 11 12 --methods seq comp --save_models --outdir runs/phase1_ring100
+device: cuda | methods: ['seq', 'comp'] | outdir: <workspace>/newton_exp\paper\code_final\runs\phase1_ring100
+[selfcheck] ring_100d: max|Du err|=8.88e-16, max|Lap err|=5.68e-14, max|residual|=5.68e-14
+[ring_100d, seq k=0 seed=11] residual scale sigma=1.9216e+00
+[ring_100d, seq k=0 seed=11] epoch 00001/4000, loss(norm)=9.2955e-01, time=0.3s, peak_cuda=2078MB
+[ring_100d, seq k=0 seed=11] epoch 00500/4000, loss(norm)=6.5300e-01, time=92.2s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=11] epoch 01000/4000, loss(norm)=6.7492e-01, time=184.2s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=11] epoch 01500/4000, loss(norm)=5.5954e-01, time=276.4s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=11] epoch 02000/4000, loss(norm)=5.7229e-01, time=368.4s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=11] epoch 02500/4000, loss(norm)=5.1564e-01, time=462.8s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=11] epoch 03000/4000, loss(norm)=4.5406e-01, time=556.9s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=11] epoch 03500/4000, loss(norm)=4.8225e-01, time=651.2s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=11] epoch 04000/4000, loss(norm)=4.8989e-01, time=745.9s, peak_cuda=2080MB
+[seq ring_100d seed=11 K=1] E=7.739e-01 R=1.284e+00
+[ring_100d, seq k=1 seed=11] residual scale sigma=1.4874e+00
+[ring_100d, seq k=1 seed=11] epoch 00001/4000, loss(norm)=9.1870e-01, time=0.4s, peak_cuda=3401MB
+[ring_100d, seq k=1 seed=11] epoch 00500/4000, loss(norm)=6.7181e-01, time=153.1s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=11] epoch 01000/4000, loss(norm)=7.2308e-01, time=305.8s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=11] epoch 01500/4000, loss(norm)=5.7067e-01, time=456.4s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=11] epoch 02000/4000, loss(norm)=5.5742e-01, time=606.0s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=11] epoch 02500/4000, loss(norm)=5.6160e-01, time=755.2s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=11] epoch 03000/4000, loss(norm)=5.3326e-01, time=903.6s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=11] epoch 03500/4000, loss(norm)=4.7392e-01, time=1051.8s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=11] epoch 04000/4000, loss(norm)=4.1826e-01, time=1200.2s, peak_cuda=3403MB
+[seq ring_100d seed=11 K=2] E=5.668e-01 R=9.795e-01
+[ring_100d, seq k=2 seed=11] residual scale sigma=1.2553e+00
+[ring_100d, seq k=2 seed=11] epoch 00001/4000, loss(norm)=1.0151e+00, time=0.6s, peak_cuda=4724MB
+[ring_100d, seq k=2 seed=11] epoch 00500/4000, loss(norm)=5.0566e-01, time=206.0s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=11] epoch 01000/4000, loss(norm)=5.0542e-01, time=412.1s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=11] epoch 01500/4000, loss(norm)=4.6455e-01, time=618.4s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=11] epoch 02000/4000, loss(norm)=5.2118e-01, time=824.7s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=11] epoch 02500/4000, loss(norm)=4.2878e-01, time=1030.9s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=11] epoch 03000/4000, loss(norm)=4.1992e-01, time=1236.8s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=11] epoch 03500/4000, loss(norm)=3.8901e-01, time=1442.7s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=11] epoch 04000/4000, loss(norm)=3.5882e-01, time=1648.7s, peak_cuda=4726MB
+[seq ring_100d seed=11 K=3] E=4.321e-01 R=7.971e-01
+[ring_100d, seq k=3 seed=11] residual scale sigma=1.2172e+00
+[ring_100d, seq k=3 seed=11] epoch 00001/4000, loss(norm)=9.9670e-01, time=0.8s, peak_cuda=6046MB
+[ring_100d, seq k=3 seed=11] epoch 00500/4000, loss(norm)=4.1230e-01, time=262.8s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=11] epoch 01000/4000, loss(norm)=3.7348e-01, time=524.8s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=11] epoch 01500/4000, loss(norm)=3.7954e-01, time=787.9s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=11] epoch 02000/4000, loss(norm)=3.5081e-01, time=1050.5s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=11] epoch 02500/4000, loss(norm)=3.9581e-01, time=1313.6s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=11] epoch 03000/4000, loss(norm)=3.9825e-01, time=1576.4s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=11] epoch 03500/4000, loss(norm)=3.2584e-01, time=1839.0s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=11] epoch 04000/4000, loss(norm)=3.4253e-01, time=2101.3s, peak_cuda=6048MB
+[seq ring_100d seed=11 K=4] E=3.789e-01 R=7.167e-01
+[ring_100d, comp seed=11] residual scale sigma=2.3756e+00
+[ring_100d, comp seed=11] epoch 00001/16000, loss(norm)=8.9801e-01, time=0.7s, peak_cuda=6468MB
+[ring_100d, comp seed=11] epoch 00500/16000, loss(norm)=3.4136e-01, time=236.2s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 01000/16000, loss(norm)=3.0526e-01, time=472.6s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 01500/16000, loss(norm)=2.2400e-01, time=708.7s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 02000/16000, loss(norm)=2.0996e-01, time=945.1s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 02500/16000, loss(norm)=1.5471e-01, time=1181.3s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 03000/16000, loss(norm)=1.3481e-01, time=1417.1s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 03500/16000, loss(norm)=1.1726e-01, time=1652.8s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 04000/16000, loss(norm)=1.1046e-01, time=1889.0s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 04500/16000, loss(norm)=1.0190e-01, time=2124.7s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 05000/16000, loss(norm)=8.2625e-02, time=2360.4s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 05500/16000, loss(norm)=8.4980e-02, time=2596.4s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 06000/16000, loss(norm)=7.6481e-02, time=2833.0s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 06500/16000, loss(norm)=7.0382e-02, time=3068.8s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 07000/16000, loss(norm)=6.5698e-02, time=3304.9s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 07500/16000, loss(norm)=6.7193e-02, time=3540.7s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 08000/16000, loss(norm)=6.2775e-02, time=3776.5s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 08500/16000, loss(norm)=6.8868e-02, time=4012.7s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 09000/16000, loss(norm)=5.9113e-02, time=4249.0s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 09500/16000, loss(norm)=6.1978e-02, time=4484.7s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 10000/16000, loss(norm)=6.5042e-02, time=4720.7s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 10500/16000, loss(norm)=5.3231e-02, time=4957.0s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 11000/16000, loss(norm)=6.1145e-02, time=5193.0s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 11500/16000, loss(norm)=5.8157e-02, time=5429.4s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 12000/16000, loss(norm)=6.2214e-02, time=5665.2s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 12500/16000, loss(norm)=6.1585e-02, time=5901.1s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 13000/16000, loss(norm)=5.2040e-02, time=6137.2s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 13500/16000, loss(norm)=5.5202e-02, time=6373.1s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 14000/16000, loss(norm)=5.6843e-02, time=6609.4s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 14500/16000, loss(norm)=6.1692e-02, time=6845.9s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 15000/16000, loss(norm)=5.2231e-02, time=7082.5s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 15500/16000, loss(norm)=5.6763e-02, time=7319.2s, peak_cuda=6473MB
+[ring_100d, comp seed=11] epoch 16000/16000, loss(norm)=5.6302e-02, time=7555.1s, peak_cuda=6473MB
+[comp ring_100d seed=11] E=3.491e-01 R=5.730e-01
+[ring_100d, seq k=0 seed=12] residual scale sigma=1.8335e+00
+[ring_100d, seq k=0 seed=12] epoch 00001/4000, loss(norm)=9.7662e-01, time=0.3s, peak_cuda=2078MB
+[ring_100d, seq k=0 seed=12] epoch 00500/4000, loss(norm)=8.1359e-01, time=91.1s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=12] epoch 01000/4000, loss(norm)=7.4825e-01, time=182.0s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=12] epoch 01500/4000, loss(norm)=7.0559e-01, time=272.9s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=12] epoch 02000/4000, loss(norm)=6.1959e-01, time=363.7s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=12] epoch 02500/4000, loss(norm)=5.8297e-01, time=454.5s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=12] epoch 03000/4000, loss(norm)=5.4673e-01, time=545.4s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=12] epoch 03500/4000, loss(norm)=4.8395e-01, time=636.2s, peak_cuda=2080MB
+[ring_100d, seq k=0 seed=12] epoch 04000/4000, loss(norm)=4.4760e-01, time=727.2s, peak_cuda=2080MB
+[seq ring_100d seed=12 K=1] E=7.480e-01 R=1.277e+00
+[ring_100d, seq k=1 seed=12] residual scale sigma=1.4902e+00
+[ring_100d, seq k=1 seed=12] epoch 00001/4000, loss(norm)=9.7527e-01, time=0.4s, peak_cuda=3401MB
+[ring_100d, seq k=1 seed=12] epoch 00500/4000, loss(norm)=6.7457e-01, time=148.5s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=12] epoch 01000/4000, loss(norm)=6.0933e-01, time=296.8s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=12] epoch 01500/4000, loss(norm)=5.6368e-01, time=445.0s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=12] epoch 02000/4000, loss(norm)=5.7187e-01, time=593.5s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=12] epoch 02500/4000, loss(norm)=5.2196e-01, time=742.0s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=12] epoch 03000/4000, loss(norm)=5.0214e-01, time=890.4s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=12] epoch 03500/4000, loss(norm)=5.1506e-01, time=1038.8s, peak_cuda=3403MB
+[ring_100d, seq k=1 seed=12] epoch 04000/4000, loss(norm)=4.4369e-01, time=1187.1s, peak_cuda=3403MB
+[seq ring_100d seed=12 K=2] E=5.855e-01 R=9.994e-01
+[ring_100d, seq k=2 seed=12] residual scale sigma=1.2489e+00
+[ring_100d, seq k=2 seed=12] epoch 00001/4000, loss(norm)=9.3038e-01, time=0.6s, peak_cuda=4724MB
+[ring_100d, seq k=2 seed=12] epoch 00500/4000, loss(norm)=6.0340e-01, time=206.3s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=12] epoch 01000/4000, loss(norm)=5.2030e-01, time=412.1s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=12] epoch 01500/4000, loss(norm)=4.9434e-01, time=618.1s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=12] epoch 02000/4000, loss(norm)=5.3276e-01, time=823.6s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=12] epoch 02500/4000, loss(norm)=5.0219e-01, time=1029.5s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=12] epoch 03000/4000, loss(norm)=4.3870e-01, time=1235.9s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=12] epoch 03500/4000, loss(norm)=4.8450e-01, time=1442.6s, peak_cuda=4726MB
+[ring_100d, seq k=2 seed=12] epoch 04000/4000, loss(norm)=4.5097e-01, time=1648.4s, peak_cuda=4726MB
+[seq ring_100d seed=12 K=3] E=4.700e-01 R=8.414e-01
+[ring_100d, seq k=3 seed=12] residual scale sigma=1.2058e+00
+[ring_100d, seq k=3 seed=12] epoch 00001/4000, loss(norm)=1.0425e+00, time=0.7s, peak_cuda=6046MB
+[ring_100d, seq k=3 seed=12] epoch 00500/4000, loss(norm)=4.7831e-01, time=263.4s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=12] epoch 01000/4000, loss(norm)=4.4839e-01, time=527.1s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=12] epoch 01500/4000, loss(norm)=4.0137e-01, time=789.8s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=12] epoch 02000/4000, loss(norm)=4.0536e-01, time=1052.4s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=12] epoch 02500/4000, loss(norm)=4.1139e-01, time=1314.8s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=12] epoch 03000/4000, loss(norm)=3.8707e-01, time=1577.2s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=12] epoch 03500/4000, loss(norm)=3.8813e-01, time=1840.2s, peak_cuda=6048MB
+[ring_100d, seq k=3 seed=12] epoch 04000/4000, loss(norm)=4.1475e-01, time=2102.5s, peak_cuda=6048MB
+[seq ring_100d seed=12 K=4] E=3.923e-01 R=7.481e-01
+[ring_100d, comp seed=12] residual scale sigma=2.3210e+00
+[ring_100d, comp seed=12] epoch 00001/16000, loss(norm)=9.4898e-01, time=0.7s, peak_cuda=6468MB
+[ring_100d, comp seed=12] epoch 00500/16000, loss(norm)=3.8691e-01, time=236.1s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 01000/16000, loss(norm)=2.8188e-01, time=472.0s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 01500/16000, loss(norm)=2.3824e-01, time=707.8s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 02000/16000, loss(norm)=1.7848e-01, time=943.5s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 02500/16000, loss(norm)=1.8129e-01, time=1179.3s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 03000/16000, loss(norm)=1.3849e-01, time=1414.9s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 03500/16000, loss(norm)=1.2411e-01, time=1650.9s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 04000/16000, loss(norm)=1.1261e-01, time=1886.8s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 04500/16000, loss(norm)=9.3876e-02, time=2122.4s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 05000/16000, loss(norm)=8.5346e-02, time=2358.6s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 05500/16000, loss(norm)=8.0589e-02, time=2599.0s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 06000/16000, loss(norm)=7.3785e-02, time=2843.4s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 06500/16000, loss(norm)=6.9617e-02, time=3081.7s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 07000/16000, loss(norm)=6.4316e-02, time=3321.1s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 07500/16000, loss(norm)=6.7498e-02, time=3559.5s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 08000/16000, loss(norm)=5.9250e-02, time=4130.2s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 08500/16000, loss(norm)=7.3197e-02, time=4784.7s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 09000/16000, loss(norm)=6.3270e-02, time=5441.5s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 09500/16000, loss(norm)=5.7977e-02, time=5770.2s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 10000/16000, loss(norm)=6.1619e-02, time=6010.6s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 10500/16000, loss(norm)=6.3015e-02, time=6251.5s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 11000/16000, loss(norm)=6.6483e-02, time=6491.0s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 11500/16000, loss(norm)=6.6480e-02, time=6728.9s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 12000/16000, loss(norm)=5.9140e-02, time=6966.7s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 12500/16000, loss(norm)=6.1288e-02, time=7204.4s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 13000/16000, loss(norm)=5.5165e-02, time=7441.9s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 13500/16000, loss(norm)=6.3566e-02, time=7679.4s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 14000/16000, loss(norm)=5.9743e-02, time=7917.1s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 14500/16000, loss(norm)=5.4222e-02, time=8155.3s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 15000/16000, loss(norm)=5.5853e-02, time=8393.1s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 15500/16000, loss(norm)=5.9296e-02, time=8630.7s, peak_cuda=6473MB
+[ring_100d, comp seed=12] epoch 16000/16000, loss(norm)=5.5424e-02, time=8868.4s, peak_cuda=6473MB
+[comp ring_100d seed=12] E=3.211e-01 R=5.427e-01
+Done in 464.5 min. Outputs: <workspace>/newton_exp\paper\code_final\runs\phase1_ring100
+++ date
++ echo 'PHASE2: adaptive stopping ring d=10,20,50 seeds 11 12 13 : Tue Aug 11 18:47:38     2026'
+PHASE2: adaptive stopping ring d=10,20,50 seeds 11 12 13 : Tue Aug 11 18:47:38     2026
++ <user>/anaconda3/python.exe phase2_adaptive.py --dims 10 20 50 --seeds 11 12 13 --taus 0.3 0.1 0.05 --outdir runs/phase2_adaptive
+device: cuda | dims [10, 20, 50] seeds [11, 12, 13] taus [0.3, 0.1, 0.05]
+[selfcheck] ring_10d: max|Du err|=8.88e-16, max|Lap err|=1.42e-14, max|residual|=1.42e-14
+=== ring d=10 seed=11 tau=0.3 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7734e+00->2.4260e-01 C=5.3330e-01 tau=0.3
+    [k=1] ep= 2000 ||rho||_val=1.1177e-01 target=1.2177e-01
+  [k=1] forced=True ep=2000 lam=1.0 R:2.4354e-01->1.1391e-01 C=1.1424e-01 tau=0.3
+--> K=2 reason=certified E=4.528e-02 C=1.142e-01 epochs=2500 wall=66s
+=== ring d=10 seed=12 tau=0.3 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7699e+00->1.9792e-01 C=4.8810e-01 tau=0.3
+    [k=1] ep= 2000 ||rho||_val=1.1355e-01 target=9.8546e-02
+  [k=1] forced=True ep=3500 lam=1.0 R:1.9709e-01->9.4136e-02 C=9.6020e-02 tau=0.3
+--> K=2 reason=certified E=4.022e-02 C=9.602e-02 epochs=4000 wall=105s
+=== ring d=10 seed=13 tau=0.3 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7662e+00->1.9724e-01 C=4.8825e-01 tau=0.3
+    [k=1] ep= 2000 ||rho||_val=1.0763e-01 target=9.8263e-02
+  [k=1] forced=True ep=3000 lam=1.0 R:1.9653e-01->9.5252e-02 C=9.5923e-02 tau=0.3
+--> K=2 reason=certified E=3.739e-02 C=9.592e-02 epochs=3500 wall=92s
+=== ring d=10 seed=11 tau=0.1 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7734e+00->2.4260e-01 C=5.3330e-01 tau=0.1
+    [k=1] ep= 2000 ||rho||_val=1.1177e-01 target=1.2177e-01
+  [k=1] forced=True ep=2000 lam=1.0 R:2.4354e-01->1.1391e-01 C=1.1424e-01 tau=0.1
+    [k=2] ep= 2000 ||rho||_val=1.0306e-01 target=5.6797e-02
+    [k=2] ep= 4000 ||rho||_val=8.9627e-02 target=5.6797e-02
+    [k=2] ep= 6000 ||rho||_val=7.8024e-02 target=5.6797e-02
+    [k=2] ep= 8000 ||rho||_val=7.2964e-02 target=5.6797e-02
+  [k=2] forced=False ep=8000 lam=1.0 R:1.1359e-01->7.3818e-02 C=7.4272e-02 tau=0.1
+--> K=3 reason=certified E=2.814e-02 C=7.427e-02 epochs=10500 wall=320s
+=== ring d=10 seed=12 tau=0.1 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7699e+00->1.9792e-01 C=4.8810e-01 tau=0.1
+    [k=1] ep= 2000 ||rho||_val=1.1355e-01 target=9.8546e-02
+  [k=1] forced=True ep=3500 lam=1.0 R:1.9709e-01->9.4136e-02 C=9.6020e-02 tau=0.1
+--> K=2 reason=certified E=4.022e-02 C=9.602e-02 epochs=4000 wall=106s
+=== ring d=10 seed=13 tau=0.1 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7662e+00->1.9724e-01 C=4.8825e-01 tau=0.1
+    [k=1] ep= 2000 ||rho||_val=1.0763e-01 target=9.8263e-02
+  [k=1] forced=True ep=3000 lam=1.0 R:1.9653e-01->9.5252e-02 C=9.5923e-02 tau=0.1
+--> K=2 reason=certified E=3.739e-02 C=9.592e-02 epochs=3500 wall=93s
+=== ring d=10 seed=11 tau=0.05 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7734e+00->2.4260e-01 C=5.3330e-01 tau=0.05
+    [k=1] ep= 2000 ||rho||_val=1.1177e-01 target=1.2177e-01
+  [k=1] forced=True ep=2000 lam=1.0 R:2.4354e-01->1.1391e-01 C=1.1424e-01 tau=0.05
+    [k=2] ep= 2000 ||rho||_val=1.0306e-01 target=5.6797e-02
+    [k=2] ep= 4000 ||rho||_val=8.9627e-02 target=5.6797e-02
+    [k=2] ep= 6000 ||rho||_val=7.8024e-02 target=5.6797e-02
+    [k=2] ep= 8000 ||rho||_val=7.2964e-02 target=5.6797e-02
+  [k=2] forced=False ep=8000 lam=1.0 R:1.1359e-01->7.3818e-02 C=7.4272e-02 tau=0.05
+    [k=3] ep= 2000 ||rho||_val=7.0083e-02 target=3.6663e-02
+    [k=3] ep= 4000 ||rho||_val=6.9346e-02 target=3.6663e-02
+    [k=3] ep= 6000 ||rho||_val=6.8070e-02 target=3.6663e-02
+    [k=3] ep= 8000 ||rho||_val=6.6761e-02 target=3.6663e-02
+  [k=3] forced=False ep=8000 lam=1.0 R:7.3326e-02->6.7612e-02 C=6.7231e-02 tau=0.05
+    [k=4] ep= 2000 ||rho||_val=6.5723e-02 target=3.3601e-02
+    [k=4] ep= 4000 ||rho||_val=6.5513e-02 target=3.3601e-02
+    [k=4] ep= 6000 ||rho||_val=6.5143e-02 target=3.3601e-02
+    [k=4] ep= 8000 ||rho||_val=6.3717e-02 target=3.3601e-02
+  [k=4] forced=False ep=8000 lam=1.0 R:6.7201e-02->6.4015e-02 C=6.4194e-02 tau=0.05
+    [k=5] ep= 2000 ||rho||_val=6.3212e-02 target=3.2292e-02
+    [k=5] ep= 4000 ||rho||_val=6.3236e-02 target=3.2292e-02
+    [k=5] ep= 6000 ||rho||_val=6.3507e-02 target=3.2292e-02
+    [k=5] ep= 8000 ||rho||_val=6.3181e-02 target=3.2292e-02
+  [k=5] forced=False ep=8000 lam=1.0 R:6.4585e-02->6.3975e-02 C=6.3632e-02 tau=0.05
+--> K=6 reason=floor_certificate E=2.215e-02 C=6.363e-02 epochs=34500 wall=1330s
+=== ring d=10 seed=12 tau=0.05 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7699e+00->1.9792e-01 C=4.8810e-01 tau=0.05
+    [k=1] ep= 2000 ||rho||_val=1.1355e-01 target=9.8546e-02
+  [k=1] forced=True ep=3500 lam=1.0 R:1.9709e-01->9.4136e-02 C=9.6020e-02 tau=0.05
+    [k=2] ep= 2000 ||rho||_val=8.7420e-02 target=4.7415e-02
+    [k=2] ep= 4000 ||rho||_val=8.0749e-02 target=4.7415e-02
+    [k=2] ep= 6000 ||rho||_val=7.2336e-02 target=4.7415e-02
+    [k=2] ep= 8000 ||rho||_val=6.8193e-02 target=4.7415e-02
+  [k=2] forced=False ep=8000 lam=1.0 R:9.4830e-02->6.8158e-02 C=6.8699e-02 tau=0.05
+    [k=3] ep= 2000 ||rho||_val=6.6023e-02 target=3.4236e-02
+    [k=3] ep= 4000 ||rho||_val=6.6329e-02 target=3.4236e-02
+    [k=3] ep= 6000 ||rho||_val=6.5476e-02 target=3.4236e-02
+    [k=3] ep= 8000 ||rho||_val=6.3976e-02 target=3.4236e-02
+  [k=3] forced=False ep=8000 lam=1.0 R:6.8471e-02->6.4372e-02 C=6.4282e-02 tau=0.05
+    [k=4] ep= 2000 ||rho||_val=6.3597e-02 target=3.2323e-02
+    [k=4] ep= 4000 ||rho||_val=6.3373e-02 target=3.2323e-02
+    [k=4] ep= 6000 ||rho||_val=6.3019e-02 target=3.2323e-02
+    [k=4] ep= 8000 ||rho||_val=6.2417e-02 target=3.2323e-02
+  [k=4] forced=False ep=8000 lam=1.0 R:6.4645e-02->6.3230e-02 C=6.3114e-02 tau=0.05
+--> K=5 reason=floor_certificate E=2.202e-02 C=6.311e-02 epochs=28000 wall=994s
+=== ring d=10 seed=13 tau=0.05 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7662e+00->1.9724e-01 C=4.8825e-01 tau=0.05
+    [k=1] ep= 2000 ||rho||_val=1.0763e-01 target=9.8263e-02
+  [k=1] forced=True ep=3000 lam=1.0 R:1.9653e-01->9.5252e-02 C=9.5923e-02 tau=0.05
+    [k=2] ep= 2000 ||rho||_val=9.0911e-02 target=4.7205e-02
+    [k=2] ep= 4000 ||rho||_val=8.2905e-02 target=4.7205e-02
+    [k=2] ep= 6000 ||rho||_val=7.4445e-02 target=4.7205e-02
+    [k=2] ep= 8000 ||rho||_val=7.0039e-02 target=4.7205e-02
+  [k=2] forced=False ep=8000 lam=1.0 R:9.4409e-02->6.9992e-02 C=7.0783e-02 tau=0.05
+    [k=3] ep= 2000 ||rho||_val=6.7628e-02 target=3.5060e-02
+    [k=3] ep= 4000 ||rho||_val=6.7005e-02 target=3.5060e-02
+    [k=3] ep= 6000 ||rho||_val=6.5959e-02 target=3.5060e-02
+    [k=3] ep= 8000 ||rho||_val=6.4005e-02 target=3.5060e-02
+  [k=3] forced=False ep=8000 lam=1.0 R:7.0120e-02->6.4259e-02 C=6.4207e-02 tau=0.05
+    [k=4] ep= 2000 ||rho||_val=6.3449e-02 target=3.1915e-02
+    [k=4] ep= 4000 ||rho||_val=6.3468e-02 target=3.1915e-02
+    [k=4] ep= 6000 ||rho||_val=6.3275e-02 target=3.1915e-02
+    [k=4] ep= 8000 ||rho||_val=6.2412e-02 target=3.1915e-02
+  [k=4] forced=False ep=8000 lam=1.0 R:6.3830e-02->6.2556e-02 C=6.2639e-02 tau=0.05
+    [k=5] ep= 2000 ||rho||_val=6.2039e-02 target=3.1416e-02
+    [k=5] ep= 4000 ||rho||_val=6.2126e-02 target=3.1416e-02
+    [k=5] ep= 6000 ||rho||_val=6.1986e-02 target=3.1416e-02
+    [k=5] ep= 8000 ||rho||_val=6.1760e-02 target=3.1416e-02
+  [k=5] forced=False ep=8000 lam=1.0 R:6.2831e-02->6.1652e-02 C=6.1895e-02 tau=0.05
+--> K=6 reason=floor_certificate E=2.092e-02 C=6.190e-02 epochs=35500 wall=1360s
+[selfcheck] ring_20d: max|Du err|=8.88e-16, max|Lap err|=1.42e-14, max|residual|=1.42e-14
+=== ring d=20 seed=11 tau=0.3 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7748e+00->3.1475e-01 C=5.4006e-01 tau=0.3
+    [k=1] ep= 2000 ||rho||_val=2.5386e-01 target=1.5664e-01
+    [k=1] ep= 4000 ||rho||_val=2.4231e-01 target=1.5664e-01
+    [k=1] ep= 6000 ||rho||_val=2.2927e-01 target=1.5664e-01
+    [k=1] ep= 8000 ||rho||_val=2.2114e-01 target=1.5664e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:3.1329e-01->2.2065e-01 C=2.2260e-01 tau=0.3
+--> K=2 reason=certified E=9.937e-02 C=2.226e-01 epochs=8500 wall=416s
+=== ring d=20 seed=12 tau=0.3 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7695e+00->3.2336e-01 C=5.5146e-01 tau=0.3
+    [k=1] ep= 2000 ||rho||_val=2.5740e-01 target=1.6178e-01
+    [k=1] ep= 4000 ||rho||_val=2.4429e-01 target=1.6178e-01
+    [k=1] ep= 6000 ||rho||_val=2.3322e-01 target=1.6178e-01
+    [k=1] ep= 8000 ||rho||_val=2.2519e-01 target=1.6178e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:3.2356e-01->2.2741e-01 C=2.2882e-01 tau=0.3
+--> K=2 reason=certified E=1.013e-01 C=2.288e-01 epochs=8500 wall=416s
+=== ring d=20 seed=13 tau=0.3 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7558e+00->3.6343e-01 C=5.9572e-01 tau=0.3
+    [k=1] ep= 2000 ||rho||_val=2.5498e-01 target=1.8150e-01
+    [k=1] ep= 4000 ||rho||_val=2.4252e-01 target=1.8150e-01
+    [k=1] ep= 6000 ||rho||_val=2.3303e-01 target=1.8150e-01
+    [k=1] ep= 8000 ||rho||_val=2.2456e-01 target=1.8150e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:3.6300e-01->2.2539e-01 C=2.2864e-01 tau=0.3
+--> K=2 reason=certified E=1.029e-01 C=2.286e-01 epochs=8500 wall=416s
+=== ring d=20 seed=11 tau=0.1 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7748e+00->3.1475e-01 C=5.4006e-01 tau=0.1
+    [k=1] ep= 2000 ||rho||_val=2.5386e-01 target=1.5664e-01
+    [k=1] ep= 4000 ||rho||_val=2.4231e-01 target=1.5664e-01
+    [k=1] ep= 6000 ||rho||_val=2.2927e-01 target=1.5664e-01
+    [k=1] ep= 8000 ||rho||_val=2.2114e-01 target=1.5664e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:3.1329e-01->2.2065e-01 C=2.2260e-01 tau=0.1
+    [k=2] ep= 2000 ||rho||_val=2.1476e-01 target=1.0974e-01
+    [k=2] ep= 4000 ||rho||_val=2.0638e-01 target=1.0974e-01
+    [k=2] ep= 6000 ||rho||_val=1.9477e-01 target=1.0974e-01
+    [k=2] ep= 8000 ||rho||_val=1.8871e-01 target=1.0974e-01
+  [k=2] forced=False ep=8000 lam=1.0 R:2.1948e-01->1.8721e-01 C=1.8881e-01 tau=0.1
+    [k=3] ep= 2000 ||rho||_val=1.8375e-01 target=9.3717e-02
+    [k=3] ep= 4000 ||rho||_val=1.7909e-01 target=9.3717e-02
+    [k=3] ep= 6000 ||rho||_val=1.7436e-01 target=9.3717e-02
+    [k=3] ep= 8000 ||rho||_val=1.7155e-01 target=9.3717e-02
+  [k=3] forced=False ep=8000 lam=1.0 R:1.8743e-01->1.7035e-01 C=1.7123e-01 tau=0.1
+    [k=4] ep= 2000 ||rho||_val=1.6873e-01 target=8.5630e-02
+    [k=4] ep= 4000 ||rho||_val=1.6764e-01 target=8.5630e-02
+    [k=4] ep= 6000 ||rho||_val=1.6452e-01 target=8.5630e-02
+    [k=4] ep= 8000 ||rho||_val=1.6209e-01 target=8.5630e-02
+  [k=4] forced=False ep=8000 lam=1.0 R:1.7126e-01->1.6214e-01 C=1.6238e-01 tau=0.1
+    [k=5] ep= 2000 ||rho||_val=1.6030e-01 target=8.1560e-02
+    [k=5] ep= 4000 ||rho||_val=1.5912e-01 target=8.1560e-02
+    [k=5] ep= 6000 ||rho||_val=1.5776e-01 target=8.1560e-02
+    [k=5] ep= 8000 ||rho||_val=1.5588e-01 target=8.1560e-02
+  [k=5] forced=False ep=8000 lam=1.0 R:1.6312e-01->1.5607e-01 C=1.5569e-01 tau=0.1
+--> K=6 reason=max_steps E=6.393e-02 C=1.557e-01 epochs=40500 wall=2810s
+=== ring d=20 seed=12 tau=0.1 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7695e+00->3.2336e-01 C=5.5146e-01 tau=0.1
+    [k=1] ep= 2000 ||rho||_val=2.5740e-01 target=1.6178e-01
+    [k=1] ep= 4000 ||rho||_val=2.4429e-01 target=1.6178e-01
+    [k=1] ep= 6000 ||rho||_val=2.3322e-01 target=1.6178e-01
+    [k=1] ep= 8000 ||rho||_val=2.2519e-01 target=1.6178e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:3.2356e-01->2.2741e-01 C=2.2882e-01 tau=0.1
+    [k=2] ep= 2000 ||rho||_val=2.1807e-01 target=1.1329e-01
+    [k=2] ep= 4000 ||rho||_val=2.0452e-01 target=1.1329e-01
+    [k=2] ep= 6000 ||rho||_val=1.9411e-01 target=1.1329e-01
+    [k=2] ep= 8000 ||rho||_val=1.8761e-01 target=1.1329e-01
+  [k=2] forced=False ep=8000 lam=1.0 R:2.2659e-01->1.8958e-01 C=1.8847e-01 tau=0.1
+    [k=3] ep= 2000 ||rho||_val=1.8307e-01 target=9.3611e-02
+    [k=3] ep= 4000 ||rho||_val=1.7953e-01 target=9.3611e-02
+    [k=3] ep= 6000 ||rho||_val=1.7345e-01 target=9.3611e-02
+    [k=3] ep= 8000 ||rho||_val=1.7149e-01 target=9.3611e-02
+  [k=3] forced=False ep=8000 lam=1.0 R:1.8722e-01->1.7132e-01 C=1.7128e-01 tau=0.1
+    [k=4] ep= 2000 ||rho||_val=1.6911e-01 target=8.5481e-02
+    [k=4] ep= 4000 ||rho||_val=1.6747e-01 target=8.5481e-02
+    [k=4] ep= 6000 ||rho||_val=1.6444e-01 target=8.5481e-02
+    [k=4] ep= 8000 ||rho||_val=1.6171e-01 target=8.5481e-02
+  [k=4] forced=False ep=8000 lam=1.0 R:1.7096e-01->1.6063e-01 C=1.6270e-01 tau=0.1
+    [k=5] ep= 2000 ||rho||_val=1.6092e-01 target=8.1222e-02
+    [k=5] ep= 4000 ||rho||_val=1.6066e-01 target=8.1222e-02
+    [k=5] ep= 6000 ||rho||_val=1.5970e-01 target=8.1222e-02
+    [k=5] ep= 8000 ||rho||_val=1.5817e-01 target=8.1222e-02
+  [k=5] forced=False ep=8000 lam=1.0 R:1.6244e-01->1.5677e-01 C=1.5766e-01 tau=0.1
+--> K=6 reason=max_steps E=6.515e-02 C=1.577e-01 epochs=40500 wall=2897s
+=== ring d=20 seed=13 tau=0.1 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7558e+00->3.6343e-01 C=5.9572e-01 tau=0.1
+    [k=1] ep= 2000 ||rho||_val=2.5498e-01 target=1.8150e-01
+    [k=1] ep= 4000 ||rho||_val=2.4252e-01 target=1.8150e-01
+    [k=1] ep= 6000 ||rho||_val=2.3303e-01 target=1.8150e-01
+    [k=1] ep= 8000 ||rho||_val=2.2456e-01 target=1.8150e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:3.6300e-01->2.2539e-01 C=2.2864e-01 tau=0.1
+    [k=2] ep= 2000 ||rho||_val=2.1692e-01 target=1.1244e-01
+    [k=2] ep= 4000 ||rho||_val=2.0474e-01 target=1.1244e-01
+    [k=2] ep= 6000 ||rho||_val=1.9603e-01 target=1.1244e-01
+    [k=2] ep= 8000 ||rho||_val=1.8942e-01 target=1.1244e-01
+  [k=2] forced=False ep=8000 lam=1.0 R:2.2489e-01->1.8974e-01 C=1.9037e-01 tau=0.1
+    [k=3] ep= 2000 ||rho||_val=1.8517e-01 target=9.4993e-02
+    [k=3] ep= 4000 ||rho||_val=1.8110e-01 target=9.4993e-02
+    [k=3] ep= 6000 ||rho||_val=1.7539e-01 target=9.4993e-02
+    [k=3] ep= 8000 ||rho||_val=1.7205e-01 target=9.4993e-02
+  [k=3] forced=False ep=8000 lam=1.0 R:1.8999e-01->1.7223e-01 C=1.7416e-01 tau=0.1
+    [k=4] ep= 2000 ||rho||_val=1.7001e-01 target=8.7053e-02
+    [k=4] ep= 4000 ||rho||_val=1.6819e-01 target=8.7053e-02
+    [k=4] ep= 6000 ||rho||_val=1.6587e-01 target=8.7053e-02
+    [k=4] ep= 8000 ||rho||_val=1.6295e-01 target=8.7053e-02
+  [k=4] forced=False ep=8000 lam=1.0 R:1.7411e-01->1.6351e-01 C=1.6381e-01 tau=0.1
+    [k=5] ep= 2000 ||rho||_val=1.6165e-01 target=8.1878e-02
+    [k=5] ep= 4000 ||rho||_val=1.6152e-01 target=8.1878e-02
+    [k=5] ep= 6000 ||rho||_val=1.6008e-01 target=8.1878e-02
+    [k=5] ep= 8000 ||rho||_val=1.5835e-01 target=8.1878e-02
+  [k=5] forced=False ep=8000 lam=1.0 R:1.6376e-01->1.5895e-01 C=1.5767e-01 tau=0.1
+--> K=6 reason=max_steps E=6.562e-02 C=1.577e-01 epochs=40500 wall=2894s
+=== ring d=20 seed=11 tau=0.05 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7748e+00->3.1475e-01 C=5.4006e-01 tau=0.05
+    [k=1] ep= 2000 ||rho||_val=2.5386e-01 target=1.5664e-01
+    [k=1] ep= 4000 ||rho||_val=2.4231e-01 target=1.5664e-01
+    [k=1] ep= 6000 ||rho||_val=2.2927e-01 target=1.5664e-01
+    [k=1] ep= 8000 ||rho||_val=2.2114e-01 target=1.5664e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:3.1329e-01->2.2065e-01 C=2.2260e-01 tau=0.05
+    [k=2] ep= 2000 ||rho||_val=2.1476e-01 target=1.0974e-01
+    [k=2] ep= 4000 ||rho||_val=2.0638e-01 target=1.0974e-01
+    [k=2] ep= 6000 ||rho||_val=1.9477e-01 target=1.0974e-01
+    [k=2] ep= 8000 ||rho||_val=1.8871e-01 target=1.0974e-01
+  [k=2] forced=False ep=8000 lam=1.0 R:2.1948e-01->1.8721e-01 C=1.8881e-01 tau=0.05
+    [k=3] ep= 2000 ||rho||_val=1.8375e-01 target=9.3717e-02
+    [k=3] ep= 4000 ||rho||_val=1.7909e-01 target=9.3717e-02
+    [k=3] ep= 6000 ||rho||_val=1.7436e-01 target=9.3717e-02
+    [k=3] ep= 8000 ||rho||_val=1.7155e-01 target=9.3717e-02
+  [k=3] forced=False ep=8000 lam=1.0 R:1.8743e-01->1.7035e-01 C=1.7123e-01 tau=0.05
+    [k=4] ep= 2000 ||rho||_val=1.6873e-01 target=8.5630e-02
+    [k=4] ep= 4000 ||rho||_val=1.6764e-01 target=8.5630e-02
+    [k=4] ep= 6000 ||rho||_val=1.6452e-01 target=8.5630e-02
+    [k=4] ep= 8000 ||rho||_val=1.6209e-01 target=8.5630e-02
+  [k=4] forced=False ep=8000 lam=1.0 R:1.7126e-01->1.6214e-01 C=1.6238e-01 tau=0.05
+    [k=5] ep= 2000 ||rho||_val=1.6030e-01 target=8.1560e-02
+    [k=5] ep= 4000 ||rho||_val=1.5912e-01 target=8.1560e-02
+    [k=5] ep= 6000 ||rho||_val=1.5776e-01 target=8.1560e-02
+    [k=5] ep= 8000 ||rho||_val=1.5588e-01 target=8.1560e-02
+  [k=5] forced=False ep=8000 lam=1.0 R:1.6312e-01->1.5607e-01 C=1.5569e-01 tau=0.05
+--> K=6 reason=max_steps E=6.393e-02 C=1.557e-01 epochs=40500 wall=2894s
+=== ring d=20 seed=12 tau=0.05 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7695e+00->3.2336e-01 C=5.5146e-01 tau=0.05
+    [k=1] ep= 2000 ||rho||_val=2.5740e-01 target=1.6178e-01
+    [k=1] ep= 4000 ||rho||_val=2.4429e-01 target=1.6178e-01
+    [k=1] ep= 6000 ||rho||_val=2.3322e-01 target=1.6178e-01
+    [k=1] ep= 8000 ||rho||_val=2.2519e-01 target=1.6178e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:3.2356e-01->2.2741e-01 C=2.2882e-01 tau=0.05
+    [k=2] ep= 2000 ||rho||_val=2.1807e-01 target=1.1329e-01
+    [k=2] ep= 4000 ||rho||_val=2.0452e-01 target=1.1329e-01
+    [k=2] ep= 6000 ||rho||_val=1.9411e-01 target=1.1329e-01
+    [k=2] ep= 8000 ||rho||_val=1.8761e-01 target=1.1329e-01
+  [k=2] forced=False ep=8000 lam=1.0 R:2.2659e-01->1.8958e-01 C=1.8847e-01 tau=0.05
+    [k=3] ep= 2000 ||rho||_val=1.8307e-01 target=9.3611e-02
+    [k=3] ep= 4000 ||rho||_val=1.7953e-01 target=9.3611e-02
+    [k=3] ep= 6000 ||rho||_val=1.7345e-01 target=9.3611e-02
+    [k=3] ep= 8000 ||rho||_val=1.7149e-01 target=9.3611e-02
+  [k=3] forced=False ep=8000 lam=1.0 R:1.8722e-01->1.7132e-01 C=1.7128e-01 tau=0.05
+    [k=4] ep= 2000 ||rho||_val=1.6911e-01 target=8.5481e-02
+    [k=4] ep= 4000 ||rho||_val=1.6747e-01 target=8.5481e-02
+    [k=4] ep= 6000 ||rho||_val=1.6444e-01 target=8.5481e-02
+    [k=4] ep= 8000 ||rho||_val=1.6171e-01 target=8.5481e-02
+  [k=4] forced=False ep=8000 lam=1.0 R:1.7096e-01->1.6063e-01 C=1.6270e-01 tau=0.05
+    [k=5] ep= 2000 ||rho||_val=1.6092e-01 target=8.1222e-02
+    [k=5] ep= 4000 ||rho||_val=1.6066e-01 target=8.1222e-02
+    [k=5] ep= 6000 ||rho||_val=1.5970e-01 target=8.1222e-02
+    [k=5] ep= 8000 ||rho||_val=1.5817e-01 target=8.1222e-02
+  [k=5] forced=False ep=8000 lam=1.0 R:1.6244e-01->1.5677e-01 C=1.5766e-01 tau=0.05
+--> K=6 reason=max_steps E=6.515e-02 C=1.577e-01 epochs=40500 wall=2894s
+=== ring d=20 seed=13 tau=0.05 ===
+  [k=0] forced=True ep=500 lam=1.0 R:1.7558e+00->3.6343e-01 C=5.9572e-01 tau=0.05
+    [k=1] ep= 2000 ||rho||_val=2.5498e-01 target=1.8150e-01
+    [k=1] ep= 4000 ||rho||_val=2.4252e-01 target=1.8150e-01
+    [k=1] ep= 6000 ||rho||_val=2.3303e-01 target=1.8150e-01
+    [k=1] ep= 8000 ||rho||_val=2.2456e-01 target=1.8150e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:3.6300e-01->2.2539e-01 C=2.2864e-01 tau=0.05
+    [k=2] ep= 2000 ||rho||_val=2.1692e-01 target=1.1244e-01
+    [k=2] ep= 4000 ||rho||_val=2.0474e-01 target=1.1244e-01
+    [k=2] ep= 6000 ||rho||_val=1.9603e-01 target=1.1244e-01
+    [k=2] ep= 8000 ||rho||_val=1.8942e-01 target=1.1244e-01
+  [k=2] forced=False ep=8000 lam=1.0 R:2.2489e-01->1.8974e-01 C=1.9037e-01 tau=0.05
+    [k=3] ep= 2000 ||rho||_val=1.8517e-01 target=9.4993e-02
+    [k=3] ep= 4000 ||rho||_val=1.8110e-01 target=9.4993e-02
+    [k=3] ep= 6000 ||rho||_val=1.7539e-01 target=9.4993e-02
+    [k=3] ep= 8000 ||rho||_val=1.7205e-01 target=9.4993e-02
+  [k=3] forced=False ep=8000 lam=1.0 R:1.8999e-01->1.7223e-01 C=1.7416e-01 tau=0.05
+    [k=4] ep= 2000 ||rho||_val=1.7001e-01 target=8.7053e-02
+    [k=4] ep= 4000 ||rho||_val=1.6819e-01 target=8.7053e-02
+    [k=4] ep= 6000 ||rho||_val=1.6587e-01 target=8.7053e-02
+    [k=4] ep= 8000 ||rho||_val=1.6295e-01 target=8.7053e-02
+  [k=4] forced=False ep=8000 lam=1.0 R:1.7411e-01->1.6351e-01 C=1.6381e-01 tau=0.05
+    [k=5] ep= 2000 ||rho||_val=1.6165e-01 target=8.1878e-02
+    [k=5] ep= 4000 ||rho||_val=1.6152e-01 target=8.1878e-02
+    [k=5] ep= 6000 ||rho||_val=1.6008e-01 target=8.1878e-02
+    [k=5] ep= 8000 ||rho||_val=1.5835e-01 target=8.1878e-02
+  [k=5] forced=False ep=8000 lam=1.0 R:1.6376e-01->1.5895e-01 C=1.5767e-01 tau=0.05
+--> K=6 reason=max_steps E=6.562e-02 C=1.577e-01 epochs=40500 wall=2896s
+[selfcheck] ring_50d: max|Du err|=8.88e-16, max|Lap err|=2.13e-14, max|residual|=2.13e-14
+=== ring d=50 seed=11 tau=0.3 ===
+  [k=0] forced=True ep=1000 lam=1.0 R:1.7710e+00->7.5942e-01 C=9.3488e-01 tau=0.3
+    [k=1] ep= 2000 ||rho||_val=4.9500e-01 target=3.8857e-01
+    [k=1] ep= 4000 ||rho||_val=4.7289e-01 target=3.8857e-01
+    [k=1] ep= 6000 ||rho||_val=4.7087e-01 target=3.8857e-01
+    [k=1] ep= 8000 ||rho||_val=4.6950e-01 target=3.8857e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:7.7713e-01->4.7142e-01 C=4.9512e-01 tau=0.3
+    [k=2] ep= 2000 ||rho||_val=4.5181e-01 target=2.3697e-01
+    [k=2] ep= 4000 ||rho||_val=4.4543e-01 target=2.3697e-01
+    [k=2] ep= 6000 ||rho||_val=4.4342e-01 target=2.3697e-01
+    [k=2] ep= 8000 ||rho||_val=4.3972e-01 target=2.3697e-01
+  [k=2] forced=False ep=8000 lam=1.0 R:4.7393e-01->4.4684e-01 C=4.4788e-01 tau=0.3
+    [k=3] ep= 2000 ||rho||_val=4.3863e-01 target=2.1856e-01
+    [k=3] ep= 4000 ||rho||_val=4.3486e-01 target=2.1856e-01
+    [k=3] ep= 6000 ||rho||_val=4.3158e-01 target=2.1856e-01
+    [k=3] ep= 8000 ||rho||_val=4.2826e-01 target=2.1856e-01
+  [k=3] forced=False ep=8000 lam=1.0 R:4.3713e-01->4.2907e-01 C=4.3195e-01 tau=0.3
+    [k=4] ep= 2000 ||rho||_val=4.2730e-01 target=2.1583e-01
+    [k=4] ep= 4000 ||rho||_val=4.2624e-01 target=2.1583e-01
+    [k=4] ep= 6000 ||rho||_val=4.2469e-01 target=2.1583e-01
+    [k=4] ep= 8000 ||rho||_val=4.2196e-01 target=2.1583e-01
+  [k=4] forced=False ep=8000 lam=1.0 R:4.3165e-01->4.2343e-01 C=4.2793e-01 tau=0.3
+--> K=5 reason=floor_certificate E=1.972e-01 C=4.279e-01 epochs=33000 wall=13650s
+=== ring d=50 seed=12 tau=0.3 ===
+  [k=0] forced=True ep=1000 lam=1.0 R:1.7800e+00->7.9646e-01 C=9.6566e-01 tau=0.3
+    [k=1] ep= 2000 ||rho||_val=4.9958e-01 target=4.0048e-01
+    [k=1] ep= 4000 ||rho||_val=4.8441e-01 target=4.0048e-01
+    [k=1] ep= 6000 ||rho||_val=4.7726e-01 target=4.0048e-01
+    [k=1] ep= 8000 ||rho||_val=4.7614e-01 target=4.0048e-01
+  [k=1] forced=False ep=8000 lam=1.0 R:8.0096e-01->4.7663e-01 C=5.0777e-01 tau=0.3
+    [k=2] ep= 2000 ||rho||_val=4.5649e-01 target=2.3916e-01
+    [k=2] ep= 4000 ||rho||_val=4.5101e-01 target=2.3916e-01
+    [k=2] ep= 6000 ||rho||_val=4.4567e-01 target=2.3916e-01
+    [k=2] ep= 8000 ||rho||_val=4.4017e-01 target=2.3916e-01
+  [k=2] forced=False ep=8000 lam=1.0 R:4.7832e-01->4.4001e-01 C=4.4538e-01 tau=0.3
+    [k=3] ep= 2000 ||rho||_val=4.3705e-01 target=2.1981e-01
++ exit 1

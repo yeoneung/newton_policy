@@ -1,0 +1,20 @@
+{
+  "source": "paper/code_final",
+  "original_script_sha256": {
+    "dim_sweep_newton_pinn.py": "c7d740d48ec7a770bccad95e5ab67804b37578ce292e060c74bed64762ebee60",
+    "exp1_fdm_vs_newton_pinn_paper.py": "73a53f4bfec878de04bdac5186628a01ae92f9e99c6efe6581c7a25b91712bd7",
+    "exp1_schedule_ablation.py": "49993a8117aa216bf1f28384852727e6d04dfa4c3b8d385d3a554f8b207bbe11",
+    "phase0_mc_convergence.py": "5a19269f029a5d82dbef79f36d2f597cc4b05f9ad307ba1019b590859d721b53",
+    "phase1_baselines.py": "354487ea65da82a3f59eef4ea25180c5687f6a2d70530945f3ee769939240260",
+    "phase2_adaptive.py": "1a2ad745d9c03f5be8a8399f97954f8a5c7ecf52093672c33008b502f10051c9",
+    "phase3_unforced.py": "09faaba8e9c8a233168c4ac8f72f701f0c6264d8c32c670882efe74145f835a8",
+    "make_paper_figures.py": "baedec2effaea56afd4d4bdc07b1c681b6d759674023a2bb72003a018d240f63",
+    "make_phase123_tables.py": "1d92abfde916520db66e7c5adcb0b2e6684d8997439f21df870e576d4be76cf7"
+  },
+  "release_changes": [
+    "Portable output paths and experiment runner.",
+    "Explicit manuscript presets and run configuration records.",
+    "Concise module documentation; numerical kernels unchanged.",
+    "Baseline and adaptive table command-line paths."
+  ]
+}

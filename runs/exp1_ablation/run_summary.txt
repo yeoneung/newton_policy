@@ -1,0 +1,6 @@
+Training-schedule ablation (1D Cole--Hopf Newton--PINN)
+time: 2026-08-04 08:32:57
+schedules: {'uniform': (2000, 2000, 2000, 2000), 'late': (500, 500, 1000, 6000), 'early': (6000, 1000, 500, 500)}
+seeds: [7, 8, 9]
+batch_size: 4096, width/depth: 96/5
+total wall clock: 421.9 s

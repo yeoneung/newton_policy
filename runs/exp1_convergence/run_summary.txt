@@ -1,0 +1,16 @@
+Experiment 1: FDM vs Newton--PINN
+time: 2026-08-04 08:47:59
+device: cuda
+torch_version: 2.11.0+cu128
+preset: paper
+a: 0.5
+T: 1.0
+newton_steps: 5
+epochs_per_step: 4000
+batch_size: 4096
+width: 96
+depth: 5
+lbfgs_iters: 400
+
+Metrics are saved in tables/metrics.csv.
+Figures are saved in figures/ as PDF and PNG.

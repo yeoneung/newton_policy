@@ -1,0 +1,117 @@
+=== STAGE 2: convergence order (float64) ===
+========================================================================
+Experiment 1: FDM vs Newton--PINN
+code version          : v3_exact_initial_residual_safe_autograd
+========================================================================
+time                 : 2026-08-04 08:32:58
+device               : cuda
+torch version         : 2.11.0+cu128
+preset               : paper
+output directory      : <workspace>/newton_exp\code\runs\exp1_convergence
+a                    : 0.5
+T                    : 1.0
+Newton steps          : 5
+epochs per step       : 4000
+batch size            : 4096
+network width/depth   : 96/5
+LBFGS iters           : 400
+========================================================================
+
+[1] Running FDM baseline...
+
+[2] Training Newton--PINN...
+[step 00] Adam 00001/4000, loss=9.8026e-01
+[step 00] Adam 00500/4000, loss=1.2246e-04
+[step 00] Adam 01000/4000, loss=3.1729e-05
+[step 00] Adam 01500/4000, loss=2.0712e-05
+[step 00] Adam 02000/4000, loss=3.8209e-05
+[step 00] Adam 02500/4000, loss=2.2436e-05
+[step 00] Adam 03000/4000, loss=1.2887e-05
+[step 00] Adam 03500/4000, loss=3.8286e-05
+[step 00] Adam 04000/4000, loss=1.7155e-05
+[step 00] Starting LBFGS refinement with 400 iterations.
+[step 00] LBFGS done, loss=6.8458e-05
+[step 00] Evaluating error and certificate...
+[step 01] Adam 00001/4000, loss=1.1853e-01
+[step 01] Adam 00500/4000, loss=4.5850e-05
+[step 01] Adam 01000/4000, loss=1.5576e-05
+[step 01] Adam 01500/4000, loss=1.6103e-05
+[step 01] Adam 02000/4000, loss=8.9631e-06
+[step 01] Adam 02500/4000, loss=1.2434e-05
+[step 01] Adam 03000/4000, loss=5.9865e-05
+[step 01] Adam 03500/4000, loss=5.3470e-06
+[step 01] Adam 04000/4000, loss=2.9578e-06
+[step 01] Starting LBFGS refinement with 400 iterations.
+[step 01] LBFGS done, loss=3.1389e-06
+[step 01] Evaluating error and certificate...
+[step 02] Adam 00001/4000, loss=3.5891e-02
+[step 02] Adam 00500/4000, loss=5.4636e-07
+[step 02] Adam 01000/4000, loss=5.2898e-07
+[step 02] Adam 01500/4000, loss=1.0580e-05
+[step 02] Adam 02000/4000, loss=6.8924e-07
+[step 02] Adam 02500/4000, loss=4.7565e-07
+[step 02] Adam 03000/4000, loss=7.2812e-07
+[step 02] Adam 03500/4000, loss=2.2679e-06
+[step 02] Adam 04000/4000, loss=5.3021e-07
+[step 02] Starting LBFGS refinement with 400 iterations.
+[step 02] LBFGS done, loss=6.4873e-07
+[step 02] Evaluating error and certificate...
+[step 03] Adam 00001/4000, loss=5.3233e-02
+[step 03] Adam 00500/4000, loss=5.4644e-07
+[step 03] Adam 01000/4000, loss=1.9115e-06
+[step 03] Adam 01500/4000, loss=4.8396e-07
+[step 03] Adam 02000/4000, loss=5.3744e-07
+[step 03] Adam 02500/4000, loss=4.4980e-07
+[step 03] Adam 03000/4000, loss=4.8257e-06
+[step 03] Adam 03500/4000, loss=7.2894e-07
+[step 03] Adam 04000/4000, loss=4.0038e-05
+[step 03] Starting LBFGS refinement with 400 iterations.
+[step 03] LBFGS done, loss=3.4417e-05
+[step 03] Evaluating error and certificate...
+[step 04] Adam 00001/4000, loss=1.0603e-02
+[step 04] Adam 00500/4000, loss=9.2225e-07
+[step 04] Adam 01000/4000, loss=6.8216e-07
+[step 04] Adam 01500/4000, loss=8.2938e-07
+[step 04] Adam 02000/4000, loss=5.1185e-07
+[step 04] Adam 02500/4000, loss=5.0473e-07
+[step 04] Adam 03000/4000, loss=4.7867e-07
+[step 04] Adam 03500/4000, loss=5.3355e-07
+[step 04] Adam 04000/4000, loss=1.7352e-06
+[step 04] Starting LBFGS refinement with 400 iterations.
+[step 04] LBFGS done, loss=2.1958e-06
+[step 04] Evaluating error and certificate...
+
+method      | K | L2_QT      | Energy     | Final_L2x  | Residual_L2 | Certificate | Energy_over_Cert
+------------+---+------------+------------+------------+-------------+-------------+-----------------
+FDM         |   | 9.2681e-05 | 1.5654e-04 | 1.1951e-04 | nan         | nan         | nan             
+Newton-PINN | 0 | 8.6595e-01 | 1.5744e+00 | 1.2991e+00 | 2.3839e+00  | nan         | nan             
+Newton-PINN | 1 | 7.0330e-02 | 1.6800e-01 | 1.6198e-01 | 2.4470e-01  | 2.4542e-01  | 6.8451e-01      
+Newton-PINN | 2 | 1.7263e-04 | 4.9399e-04 | 4.4049e-04 | 1.7705e-03  | 2.3918e-03  | 2.0653e-01      
+Newton-PINN | 3 | 1.1837e-04 | 2.5753e-04 | 4.7525e-05 | 1.6006e-03  | 1.5948e-03  | 1.6148e-01      
+Newton-PINN | 4 | 1.2184e-04 | 2.6957e-04 | 4.1355e-05 | 1.6051e-03  | 1.5975e-03  | 1.6875e-01      
+Newton-PINN | 5 | 1.2308e-04 | 2.7229e-04 | 5.2875e-05 | 1.6147e-03  | 1.6073e-03  | 1.6941e-01      
+
+[3] Saving tables...
+[4] Saving figures...
+[saved] runs\exp1_convergence\figures\fig01_final_time_profile.pdf
+[saved] runs\exp1_convergence\figures\fig01_final_time_profile.png
+[saved] runs\exp1_convergence\figures\fig02_error_and_certificate.pdf
+[saved] runs\exp1_convergence\figures\fig02_error_and_certificate.png
+[saved] runs\exp1_convergence\figures\fig03_certificate_ratio.pdf
+[saved] runs\exp1_convergence\figures\fig03_certificate_ratio.png
+[saved] runs\exp1_convergence\figures\fig04_training_loss.pdf
+[saved] runs\exp1_convergence\figures\fig04_training_loss.png
+[saved] runs\exp1_convergence\figures\fig05_spacetime_error.pdf
+[saved] runs\exp1_convergence\figures\fig05_spacetime_error.png
+[saved] runs\exp1_convergence\figures\fig06_final_time_error.pdf
+[saved] runs\exp1_convergence\figures\fig06_final_time_error.png
+
+Done.
+Outputs saved to: <workspace>/newton_exp\code\runs\exp1_convergence
+Main files:
+  runs\exp1_convergence\tables\metrics.csv
+  runs\exp1_convergence\figures\fig01_final_time_profile.pdf
+  runs\exp1_convergence\figures\fig02_error_and_certificate.pdf
+  runs\exp1_convergence\figures\fig03_certificate_ratio.pdf
+  runs\exp1_convergence\figures\fig05_spacetime_error.pdf
+STAGE_DONE:convergence

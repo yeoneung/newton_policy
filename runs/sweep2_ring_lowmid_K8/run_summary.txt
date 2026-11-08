@@ -1,0 +1,16 @@
+Dimension-sweep Newton--PINN benchmark
+version: dim_sweep_newton_pinn_v3_dense_time_part
+time: 2026-08-09 20:54:16
+device: cuda
+torch: 2.11.0+cu128
+families: ['ring']
+dims: [10, 20, 50]
+seeds: [11, 12]
+newton_steps: 8
+epochs_per_step: 4000
+direct_epochs: 16000 (with_direct=False)
+width/depth: 128/5
+beta_cross/gamma_cross: 0.35/0.25
+total wall clock: 19726.4 s
+Norms are RMS-normalized Monte Carlo estimates.
+Training loss is preconditioned by the per-step residual RMS (reported values are unnormalized).
